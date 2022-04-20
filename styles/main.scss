@@ -1,0 +1,21 @@
+@import './normalize';
+@font-face {
+    font-family: "Greenwich-Med";
+    src: url('~/assets/fonts/Greenwich-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Greenwich";
+    src: url('~/assets/fonts/Greenwich-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Greenwich-SemBd";
+    src: url('~/assets/fonts/Greenwich-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
