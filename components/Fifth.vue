@@ -4,19 +4,19 @@
         h2.fifth__wrapper-title Маєш можливість допомогти або сам потребуеш допомоги?
         ul.fifth__wrapper-list 
             li.fifth__wrapper-list-item 
-                button(type="button").fifth__wrapper-list-item-btn.active Хочу допомогти
+                button(type="button" @click="clickOnButton" ).fifth__wrapper-list-item-btn(:class="{'active' : ! modal}") Хочу допомогти
             li.fifth__wrapper-list-item 
-                button(type="button").fifth__wrapper-list-item-btn Потребую допомоги
-        .fifth__wrapper-wrap.active
-            form(action="#").fifth__wrapper-wrap-form
-                input(type="text" placeholder="Ваше ім’я").fifth__wrapper-wrap-form-name
+                button(type="button" @click="clickOnButton" ).fifth__wrapper-list-item-btn(:class="{'active' : modal}") Потребую допомоги
+        .fifth__wrapper-wrap(:class="{'active' : modal}" )
+            form(action="mailto:MyPikcha@gmail.com" method="post").fifth__wrapper-wrap-form
+                input(type="text" placeholder="Ваше ім’я" name="name" required).fifth__wrapper-wrap-form-name
                 .fifth__wrapper-wrap-form-menu
                     a.fifth__wrapper-wrap-form-menu-contry
                         img(src="~/assets/img/Ua.svg" alt="Номер країни").fifth__wrapper-wrap-form-menu-contry-img
                         img(src="~/assets/img/arrNumb.svg" alt="").fifth__wrapper-wrap-form-menu-contry-arrow
-                    input(type="tel" placeholder="+380 (99) 999-99-99").fifth__wrapper-wrap-form-menu-phone
-                input(type="text" placeholder="Ваше місто").fifth__wrapper-wrap-form-city
-                input(type="text" placeholder="Чим вам потрібно допомогти?").fifth__wrapper-wrap-form-help
+                    input(type="tel" placeholder="+380 (99) 999-99-99" name="phone" required).fifth__wrapper-wrap-form-menu-phone
+                input(type="text" placeholder="Ваше місто" name="locate" required).fifth__wrapper-wrap-form-city
+                input(type="text" placeholder="Чим вам потрібно допомогти?" name="help" ).fifth__wrapper-wrap-form-help
                 .fifth__wrapper-wrap-form-submit 
                     input(type="submit" value="Відправити").fifth__wrapper-wrap-form-submit-btn
                     p.fifth__wrapper-wrap-form-submit-confid Натискуючи кнопку «відправити» я даю згоду на обробку персональних даних
@@ -24,16 +24,16 @@
                 p.fifth__wrapper-wrap-info-text Яйщо ви опинились в скрутному положенні, зверніться до нас, опишіть вашу проблему і ми зробимо все можливе, щоб допомогти вам! 
                 p.fifth__wrapper-wrap-info-text Ви обов’язково будете почуті, адже, тільки, допомогая один одному, ми переможемо ворога!
                 img(src="~/assets/img/photo6.png" alt="Допомога постраждалим").fifth__wrapper-wrap-info-img 
-        .fifth__wrapper-wrap 
+        .fifth__wrapper-wrap(:class="{'active' : ! modal}" )
             form(action="#").fifth__wrapper-wrap-form
-                input(type="text" placeholder="Ваше ім’я").fifth__wrapper-wrap-form-name
+                input(type="text" placeholder="Ваше ім’я" name="name" required).fifth__wrapper-wrap-form-name
                 .fifth__wrapper-wrap-form-menu
                     a.fifth__wrapper-wrap-form-menu-contry
                         img(src="~/assets/img/Ua.svg" alt="Номер країни").fifth__wrapper-wrap-form-menu-contry-img
                         img(src="~/assets/img/arrNumb.svg" alt="").fifth__wrapper-wrap-form-menu-contry-arrow
-                    input(type="tel" placeholder="+380 (99) 999-99-99").fifth__wrapper-wrap-form-menu-phone
-                input(type="text" placeholder="Ваше місто").fifth__wrapper-wrap-form-city
-                input(type="text" placeholder="Чим вам потрібно допомогти?").fifth__wrapper-wrap-form-help
+                    input(type="tel" placeholder="+380 (99) 999-99-99" name="phone" required).fifth__wrapper-wrap-form-menu-phone
+                input(type="text" placeholder="Ваше місто" name="locate" required).fifth__wrapper-wrap-form-city
+                input(type="text" placeholder="Чим ви можете допомогти?" name="help").fifth__wrapper-wrap-form-help
                 .fifth__wrapper-wrap-form-submit 
                     input(type="submit" value="Відправити").fifth__wrapper-wrap-form-submit-btn
                     p.fifth__wrapper-wrap-form-submit-confid Натискуючи кнопку «відправити» я даю згоду на обробку персональних даних
@@ -46,7 +46,23 @@
 
 <script>
 export default {
+    data() {
+            return {
+                modal: false
+                
+            }
+        },
 
+        mounted() {
+            console.log("Header");            
+        },
+
+        methods: {
+            clickOnButton() {
+               this.modal = ! this.modal
+            }
+        },
+    
 }
 </script>
 
@@ -252,11 +268,6 @@ export default {
                 &-btn {
                     max-width: 340px;
                     font-size: 16px;
-                    &.active {
-                    }
-                    &:hover {
-                        
-                    }
                 }
             }
         }
@@ -266,40 +277,7 @@ export default {
             }
             &-form {
                 margin-top: 135px;
-                &-name {
-                    
-                    &::placeholder { 
-                    }
-                }
-                &-menu {
-                    &-contry {
-                        &-img {
-                        }
-                        &-arrow {
-                        }
-                    }
-                    
-                    &-phone {
-                    
-                    &::placeholder { 
-                    }
-                }
-                }
-                
-                &-city {
-                    
-                    &::placeholder { 
-                        
-                    }
-                }
-                &-help {
-                    
-                    &::placeholder { 
-                    }
-                }
                 &-submit {
-                    &-btn {
-                    }
                     &-confid {
                         font-size: 12px;
                     }
@@ -341,11 +319,6 @@ export default {
                 &-btn {
                     max-width: 164px;
                     font-size: 14px;
-                    &.active {
-                    }
-                    &:hover {
-                        
-                    }
                 }
             }
         }
@@ -362,8 +335,6 @@ export default {
                     max-width: 328px;
                     margin: auto;
                     margin-bottom: 20px;
-                    &::placeholder { 
-                    }
                 }
                 &-menu {
                     max-width: 328px;
@@ -375,34 +346,25 @@ export default {
                         &-img {
                             margin-left: 16px;
                         }
-                        &-arrow {
-                        }
                     }
                     
                     &-phone {
                         max-width: 328px;
                         margin: auto;
                         text-align: center;
-                    &::placeholder { 
                     }
-                }
                 }
                 
                 &-city {
                     max-width: 328px;
                     margin: auto;
                     margin-bottom: 20px;
-                    &::placeholder { 
-                        
-                    }
                 }
                 &-help {
                     
                     max-width: 328px;
                     margin: auto;
                     margin-bottom: 40px;
-                    &::placeholder { 
-                    }
                 }
                 &-submit {
                     display: block;

@@ -324,12 +324,6 @@ export default {
                         margin-right: 0;
                     }
 
-                    
-                   
-
-                    &-title {
-                    }
-
                     &-wrap {
                         max-width: 328px;
                         &-info {

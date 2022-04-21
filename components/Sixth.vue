@@ -6,26 +6,26 @@
                 h2.sixth__wrapper-faq-head-title FAQ
                 p.sixth__wrapper-faq-head-text Ми зібрали для вас відповіді на найпоширеніші запитання
             ul.sixth__wrapper-faq-list
-                li.sixth__wrapper-faq-list-item.active
+                li.sixth__wrapper-faq-list-item(:class="{'active' : modal1}")
                     .sixth__wrapper-faq-list-item-wrap
                         h4.sixth__wrapper-faq-list-item-wrap-question Чому я можу вам довіряти?
-                        p.sixth__wrapper-faq-list-item-wrap-text.active Всі ми - реальні люди. Всі ми знаходимося на території України. Ми - звичайні студенти, які вирішили бути корисними своїй країні. Щоб спростувати будь-які сумніви, ми проводимо звітність і робимо нашу справу абсолютно прозоро.
-                    .sixth__wrapper-faq-list-item-btn.active
-                li.sixth__wrapper-faq-list-item
+                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal1}") Всі ми - реальні люди. Всі ми знаходимося на території України. Ми - звичайні студенти, які вирішили бути корисними своїй країні. Щоб спростувати будь-які сумніви, ми проводимо звітність і робимо нашу справу абсолютно прозоро.
+                    .sixth__wrapper-faq-list-item-btn(type="button" @click="clickOnButton" :class="{'active' : modal1}")
+                li.sixth__wrapper-faq-list-item(:class="{'active' : modal2}")
                     .sixth__wrapper-faq-list-item-wrap
                         h4.sixth__wrapper-faq-list-item-wrap-question Як я можу допомогти?
-                        p.sixth__wrapper-faq-list-item-wrap-text •Фінансово - пожертвувати кошти <br><br> •Матеріально - продукти харчування, речі, медикаменти, пальне, транспорт. Для цього потрібно  заповнити коротку форму (*скрол )та надати контакт для зв‘язку і співпраці з вами. <br><br>•Фізично - долучитися до нашої команди<br><br>•Словесно - підтримувати нас розповсюдженням інформації репостом на своїй сторінці або за допомогою посилання на сайт
-                    .sixth__wrapper-faq-list-item-btn
-                li.sixth__wrapper-faq-list-item
+                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal2}") •Фінансово - пожертвувати кошти <br><br> •Матеріально - продукти харчування, речі, медикаменти, пальне, транспорт. Для цього потрібно  заповнити коротку форму (*скрол )та надати контакт для зв‘язку і співпраці з вами. <br><br>•Фізично - долучитися до нашої команди<br><br>•Словесно - підтримувати нас розповсюдженням інформації репостом на своїй сторінці або за допомогою посилання на сайт
+                    .sixth__wrapper-faq-list-item-btn(type="button" @click="clickOnButton" :class="{'active' : modal2}")
+                li.sixth__wrapper-faq-list-item(:class="{'active' : modal3}")
                     .sixth__wrapper-faq-list-item-wrap
                         h4.sixth__wrapper-faq-list-item-wrap-question Чому ми нічого не заробляємо на цьому?
-                        p.sixth__wrapper-faq-list-item-wrap-text  Ми - волонтери. Нам не дозволяє совість класти щось до свого карману, поки люди страждають від гуманітароної катастрофи та агресії з боку РФ. Навіть, те що ми вже зробили і робимо зараз ми вважаємо замалим внеском. Тому робимо все щоб допомогти кожному! І були б раді вітати в своїй команді однодумців)
-                    .sixth__wrapper-faq-list-item-btn
-                li.sixth__wrapper-faq-list-item
+                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal3}")  Ми - волонтери. Нам не дозволяє совість класти щось до свого карману, поки люди страждають від гуманітароної катастрофи та агресії з боку РФ. Навіть, те що ми вже зробили і робимо зараз ми вважаємо замалим внеском. Тому робимо все щоб допомогти кожному! І були б раді вітати в своїй команді однодумців)
+                    .sixth__wrapper-faq-list-item-btn(type="button" @click="clickOnButton" :class="{'active' : modal3}")
+                li.sixth__wrapper-faq-list-item(:class="{'active' : modal4}")
                     .sixth__wrapper-faq-list-item-wrap
                         h4.sixth__wrapper-faq-list-item-wrap-question Чи будете ви продовжувати свою діяльність після війни?
-                        p.sixth__wrapper-faq-list-item-wrap-text Якщо буде потреба в зборі коштів для відбудування нашої країни та рідних домівок, що залишилися розбитими від російських ракет ми обов‘язково допоможемо. Наразі не можемо дати стовідсоткової відповіді на це питання але обов‘язково зробимо все можливе!
-                    .sixth__wrapper-faq-list-item-btn
+                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal4}") Якщо буде потреба в зборі коштів для відбудування нашої країни та рідних домівок, що залишилися розбитими від російських ракет ми обов‘язково допоможемо. Наразі не можемо дати стовідсоткової відповіді на це питання але обов‘язково зробимо все можливе!
+                    .sixth__wrapper-faq-list-item-btn(type="button" @click="clickOnButton" :class="{'active' : modal4}")
         .sixth__wrapper-soul
             .sixth__wrapper-soul-head 
                 h2.sixth__wrapper-soul-head-title Команда, яка вкладує  всю душу в свою  справу
@@ -118,7 +118,25 @@
 
 <script>
 export default {
+    data() {
+            return {
+                modal1: false,
+                modal2: false,
+                modal3: false,
+                modal4: false
+                
+            }
+        },
 
+        mounted() {
+            console.log("Header");            
+        },
+
+        methods: {
+            clickOnButton() {
+               this.modal1 != this.modal2 != this.modal3 != this.modal4
+            }
+        },
 }
 </script>
 
@@ -368,9 +386,6 @@ export default {
                     max-width: 680px;
                     &-item {
                         max-width: 680px;
-                        &.active {
-                            
-                        }
 
                         &-wrap {
                             
@@ -386,31 +401,6 @@ export default {
                                     padding: 0 0 24px 24px;
                                 }
                             }
-                        }
-                        &-btn {
-                            &:hover {
-                                
-                            }
-                            &::before,
-                            &::after {
-                                
-                            }
-                            &::before {
-                            }
-                            &::after {
-                            }
-                            &:hover:after,
-                            &:hover:before {
-                            }
-
-                            &.active {
-                                
-                                &::before {
-                                }
-                                &::after {
-                                }
-                            }
-
                         }
                     }
                 }
@@ -430,8 +420,6 @@ export default {
                         }
                         &-link {
                             font-size: 16px;
-                            &:hover {
-                            }
                         }
                     }
                 }
@@ -460,8 +448,6 @@ export default {
 
                         &-item {
                             max-width: 680px;
-                            &:first-child {
-                            }
                             &-numb {
                                 font-size: 14px;
                                 margin-right: 150px;
@@ -476,19 +462,6 @@ export default {
                                 font-size: 16px;
                                 margin-right: 97px;
                                 max-width: 165px;
-                                }
-                            }
-                            
-                            &-socials {
-                                &-link {
-
-                                    &:not(:last-child) {
-                                        }
-                                    &-img {
-
-                                        &-solo {
-                                        }
-                                    }
                                 }
                             }
                         }
@@ -519,9 +492,6 @@ export default {
                     max-width: 328px;
                     &-item {
                         max-width: 328px;
-                        &.active {
-                            
-                        }
 
                         &-wrap {
                             
@@ -538,31 +508,6 @@ export default {
                                     padding: 0 0 24px 24px;
                                 }
                             }
-                        }
-                        &-btn {
-                            &:hover {
-                                
-                            }
-                            &::before,
-                            &::after {
-                                
-                            }
-                            &::before {
-                            }
-                            &::after {
-                            }
-                            &:hover:after,
-                            &:hover:before {
-                            }
-
-                            &.active {
-                                
-                                &::before {
-                                }
-                                &::after {
-                                }
-                            }
-
                         }
                     }
                 }
@@ -587,8 +532,6 @@ export default {
                         }
                         &-link {
                             font-size: 14px;
-                            &:hover {
-                            }
                         }
                     }
                 }
@@ -618,8 +561,6 @@ export default {
                         &-item {
                             max-width: 328px;
                             padding: 20px 0;
-                            &:first-child {
-                            }
                             &-numb {
                                 display: block;
                                 font-size: 14px;
@@ -641,19 +582,6 @@ export default {
                                 margin-right: 0;
                                 font-size: 14px;
                                 max-width: 143px;
-                            }
-                            }
-                            
-                            &-socials {
-                                &-link {
-
-                                    &:not(:last-child) {
-                                        }
-                                    &-img {
-
-                                        &-solo {
-                                        }
-                                    }
                                 }
                             }
                         }

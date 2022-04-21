@@ -272,9 +272,6 @@ export default {
               }
 
           }
-          &-link {
-
-          }
         }
       }
     }
@@ -291,9 +288,6 @@ export default {
         justify-content: space-between;
         &.active {
           color: #F9224B;
-        }
-        &-img {
-
         }
       }
     }
@@ -319,9 +313,6 @@ export default {
       &-img {
         margin-right: 10px;
       }
-      &-text {
-
-      }
     }
   }
 }
@@ -338,12 +329,6 @@ export default {
 
     &-list {
       display: none;
-        &-item {
-
-            &-link:hover {
-              
-            }
-        }
     }
 
     &-menu {
@@ -351,17 +336,6 @@ export default {
 
       &-button {
         margin-right: 0;
-        &-img {
-          
-        }
-
-        &-text {
-          
-        }
-
-        &:hover {
-
-        }
       }
       
 
@@ -369,9 +343,6 @@ export default {
         display: none;
         &-btn {
           display: block;
-          &:hover {
-            
-            }
           
         }
       }
@@ -400,42 +371,13 @@ export default {
       display: flex;
       &-link {
             display: flex;
-      
-        &-img {
-        }
-        &-text {
-
-        }
       }
-    }
-  &-wrapper {
-    
-     &-list {
-       &-item {
-
-         &-nav {
-          }
-          &-btn {
-          &::before,
-          &::after {
-            // display: block;
-              }
-         }
-
-         &-link {
-
-         }
-       }
-     }
     }
      &-last {
        display: flex;
        &-wrapper {
          &-lang {
            display: flex;
-           &-img {
-
-           }
          }
        }
        &-lang {
@@ -454,58 +396,16 @@ export default {
   .header {
 
   &__bar {
-    
-    &-logo {
-    }
 
     &-list {
       display: none;
-        &-item {
-
-            &-link:hover {
-              
-            }
-        }
     }
 
     &-menu {
       display: none;
-
-      &-button {
-        &-img {
-          
-        }
-
-        &-text {
-          
-        }
-
-        &:hover {
-
-        }
-      }
-      
-
-      &-lang {
-        &-btn {
-          &:hover {
-            
-            }
-          
-        }
-      }
     }
   &-tablet {
-        // background: #3F3F3F;
-        // padding: 17px 14px;
-        // border-radius: 50%;
         display: block;
-        &-btn {
-          &-img {
-
-          
-          }
-        }
         
       }
     
@@ -513,9 +413,6 @@ export default {
 }
 .header__sideBar {
     display: block;
-
-    &.active {
-    }
     &-button {
       display: block;
       max-width: 80%;
@@ -525,42 +422,10 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        &-img {
-        }
         &-text {
           font-size: 14px;
         }
       }
-    }
-  &-wrapper {
-    
-     &-list {
-       &-item {
-
-         &-nav {
-          }
-          &-btn {
-            &:hover {
-            }
-          &::before,
-          &::after {
-                                
-            }
-              &::before {
-              }
-              &::after {
-              }
-              &:hover:after,
-              &:hover:before {
-                
-              }
-         }
-
-         &-link {
-
-         }
-       }
-     }
     }
      &-last {
       display: flex;
@@ -569,13 +434,7 @@ export default {
            &.active {
              display: flex;
            }
-           &-img {
-
-           }
          }
-       }
-       &-lang {
-        
        }
      }
    }

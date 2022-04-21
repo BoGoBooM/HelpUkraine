@@ -229,8 +229,6 @@ export default {
 
                 &-link {
                     font-size: 16px;
-                    &:hover {
-                    }
                 }
             }
         }
@@ -354,8 +352,6 @@ export default {
 
                 &-link {
                     font-size: 14px;
-                    &:hover {
-                    }
                 }
             }
         }
@@ -380,10 +376,6 @@ export default {
                     max-width: 328px;
                     margin-right: 0;
                     border: none;
-                    &:not(:last-child) {
-                    }
-                    &:last-child {
-                    }
                     &:nth-child(2) {
                         margin-bottom: -20px;
                     }

@@ -134,10 +134,6 @@ export default {
                     background-blend-mode: overlay, normal;
                     backdrop-filter: blur(80px);
                     border-radius: 15px;
-                    
-
-                    &:not(:last-child) {
-                    }
                     &:first-child {
                         grid-area: second;
                     }
@@ -197,12 +193,6 @@ export default {
        
         &-info {
             max-width: 680px;
-            &-text {
-                
-                &-indent {
-
-                }
-            } 
         }
 
         &-title {
@@ -215,22 +205,6 @@ export default {
         &-content {
             justify-content: center;
             margin-bottom: 32px;
-            &-wrapper {
-
-                &-btn {
-
-                &:hover {
-
-                }
-            }
-
-            &-text {
-                
-            }
-            }
-            
-
-            
         }
 
         &-donations {
@@ -318,9 +292,6 @@ export default {
                         max-width: 152px;
                         margin-right: 0;
                         padding: 11px 35px;
-                    &:hover {
-
-                    }
                 }
 
                 &-text {

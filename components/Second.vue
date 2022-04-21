@@ -148,8 +148,6 @@ export default {
                         &-text {
                             font-size: 14px;
                             line-height: 1.3;
-                            &-link {
-                            }
                         }
                     }
 
@@ -215,8 +213,6 @@ export default {
                                 top: 0;
                                 left: 0;
                             }
-                            &:not(:last-child) {
-                            }
                         }
                     }
 
@@ -230,11 +226,6 @@ export default {
                         &-mark {
                             margin-right: 13px;
                             height: 105px;
-                        }
-
-                        &-text {
-                            &-link {
-                            }
                         }
                     }
 

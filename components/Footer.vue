@@ -73,23 +73,15 @@ export default {
         &__wrapper {
             &-title {
                 font-size: 12px;
-                &-yellow {
-                }
-                &-blue {
-                }
             }
             &-list {
 
                 &-item {
-                    &:not(:last-child) {
-                        }
                     &-text {
                         font-size: 12px;
                     }
                     &-link {
                         font-size: 12px;
-                        &:hover {
-                        }
                     }
                 }
             }
@@ -102,10 +94,6 @@ export default {
         &__wrapper {
             &-title {
                 font-size: 12px;
-                &-yellow {
-                }
-                &-blue {
-                }
             }
             &-list {
 
@@ -118,8 +106,6 @@ export default {
                     }
                     &-link {
                         font-size: 12px;
-                        &:hover {
-                        }
                     }
                 }
             }
