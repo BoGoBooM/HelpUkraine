@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.fifth 
+section.fifth 
     .fifth__wrapper
         h2.fifth__wrapper-title Маєш можливість допомогти або сам потребуеш допомоги?
         ul.fifth__wrapper-list 
@@ -8,32 +8,32 @@
             li.fifth__wrapper-list-item 
                 button(type="button" @click="clickOnButton" ).fifth__wrapper-list-item-btn(:class="{'active' : modal}") Потребую допомоги
         .fifth__wrapper-wrap(:class="{'active' : modal}" )
-            form(action="mailto:MyPikcha@gmail.com" method="post").fifth__wrapper-wrap-form
-                input(type="text" placeholder="Ваше ім’я" name="name" required).fifth__wrapper-wrap-form-name
+            form(action="~/components/telegramUaNeed.php" method="post").fifth__wrapper-wrap-form
+                input(type="text" placeholder="Ваше ім’я" name="user_name" required).fifth__wrapper-wrap-form-name
                 .fifth__wrapper-wrap-form-menu
                     a.fifth__wrapper-wrap-form-menu-contry
                         img(src="~/assets/img/Ua.svg" alt="Номер країни").fifth__wrapper-wrap-form-menu-contry-img
                         img(src="~/assets/img/arrNumb.svg" alt="").fifth__wrapper-wrap-form-menu-contry-arrow
-                    input(type="tel" placeholder="+380 (99) 999-99-99" name="phone" required).fifth__wrapper-wrap-form-menu-phone
-                input(type="text" placeholder="Ваше місто" name="locate" required).fifth__wrapper-wrap-form-city
-                input(type="text" placeholder="Чим вам потрібно допомогти?" name="help" ).fifth__wrapper-wrap-form-help
+                    input(type="tel" placeholder="+380 (99) 999-99-99" name="user_phone" required).fifth__wrapper-wrap-form-menu-phone
+                input(type="text" placeholder="Ваше місто" name="user_locate" required).fifth__wrapper-wrap-form-city
+                input(type="text" placeholder="Чим вам потрібно допомогти?" name="user_need" ).fifth__wrapper-wrap-form-help
                 .fifth__wrapper-wrap-form-submit 
                     input(type="submit" value="Відправити").fifth__wrapper-wrap-form-submit-btn
                     p.fifth__wrapper-wrap-form-submit-confid Натискуючи кнопку «відправити» я даю згоду на обробку персональних даних
             .fifth__wrapper-wrap-info
                 p.fifth__wrapper-wrap-info-text Яйщо ви опинились в скрутному положенні, зверніться до нас, опишіть вашу проблему і ми зробимо все можливе, щоб допомогти вам! 
                 p.fifth__wrapper-wrap-info-text Ви обов’язково будете почуті, адже, тільки, допомогая один одному, ми переможемо ворога!
-                img(src="~/assets/img/photo6.png" alt="Допомога постраждалим").fifth__wrapper-wrap-info-img 
+                img(src="~/assets/img/photo6.png" alt="Допомога постраждалим").fifth__wrapper-wrap-info-img
         .fifth__wrapper-wrap(:class="{'active' : ! modal}" )
-            form(action="#").fifth__wrapper-wrap-form
-                input(type="text" placeholder="Ваше ім’я" name="name" required).fifth__wrapper-wrap-form-name
+            form(action="~/components/telegramUaCan.php").fifth__wrapper-wrap-form
+                input(type="text" placeholder="Ваше ім’я" name="user_name" required).fifth__wrapper-wrap-form-name
                 .fifth__wrapper-wrap-form-menu
                     a.fifth__wrapper-wrap-form-menu-contry
                         img(src="~/assets/img/Ua.svg" alt="Номер країни").fifth__wrapper-wrap-form-menu-contry-img
                         img(src="~/assets/img/arrNumb.svg" alt="").fifth__wrapper-wrap-form-menu-contry-arrow
-                    input(type="tel" placeholder="+380 (99) 999-99-99" name="phone" required).fifth__wrapper-wrap-form-menu-phone
-                input(type="text" placeholder="Ваше місто" name="locate" required).fifth__wrapper-wrap-form-city
-                input(type="text" placeholder="Чим ви можете допомогти?" name="help").fifth__wrapper-wrap-form-help
+                    input(type="tel" placeholder="+380 (99) 999-99-99" name="user_phone" required).fifth__wrapper-wrap-form-menu-phone
+                input(type="text" placeholder="Ваше місто" name="user_locate" required).fifth__wrapper-wrap-form-city
+                input(type="text" placeholder="Чим ви можете допомогти?" name="user_can").fifth__wrapper-wrap-form-help
                 .fifth__wrapper-wrap-form-submit 
                     input(type="submit" value="Відправити").fifth__wrapper-wrap-form-submit-btn
                     p.fifth__wrapper-wrap-form-submit-confid Натискуючи кнопку «відправити» я даю згоду на обробку персональних даних

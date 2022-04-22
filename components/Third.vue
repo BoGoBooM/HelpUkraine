@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.third
+section.third
     .third__wrapper
         h2.third__wrapper-title Врятуй чиєсь життя та допоможи тим,  хто цього потребує
         .third__wrapper-grown

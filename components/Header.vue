@@ -1,5 +1,5 @@
 <template lang="pug">
-  header.header
+header.header
     .header__bar
       a(href="#").header__bar-logo
         img(src="~/assets/img/logo.svg" alt="Логотип").logo
@@ -20,12 +20,15 @@
         a(href="#").header__bar-menu-button
           img(src="~/assets/img/crest.svg", alt=" Герб України").header__bar-menu-button-img
           span.header__bar-menu-button-text Підтримати ЗСУ  
-        a(href="#").header__bar-menu-lang
-          button.header__bar-menu-lang-btn
+        a(type="button" @click="clickOnButton1").header__bar-menu-lang
+          button.header__bar-menu-lang-btn(:class="{'active' : lang}")
             span.header__bar-menu-lang-btn-text UA
+            .header__bar-menu-lang-btn-select(:class="{'active' : lang}")
+              a(href="#").header__bar-menu-lang-btn-select-ru RU
+              a(href="#").header__bar-menu-lang-btn-select-en EN
       .header__bar-tablet
         button( type="button" @click="clickOnButton").header__bar-tablet-btn 
-          img(src="~/assets/img/menu.svg" alt="Меню").header__bar-tablet-btn-img 
+          img(src="~/assets/img/menu.svg" alt="Меню").header__bar-tablet-btn-img
     .header__sideBar(:class="{'active' : modal}") 
       .header__sideBar-wrapper 
         ul.header__sideBar-wrapper-list
@@ -45,11 +48,12 @@
           li.header__sideBar-wrapper-list-item
             a(href="#").header__sideBar-wrapper-list-item-link  Контакти
         .header__sideBar-last
-          .header__sideBar-last-wrapper
-            a(href="#").header__sideBar-last-wrapper-lang.active Мова UA
-              img(src="~/assets/img/arrLangR.svg", alt="Мова сайту").header__sideBar-last-wrapper-lang-img
-          a(href="#").header__sideBar-last-lang Language EN
-          a(href="#").header__sideBar-last-lang Язык RU
+          .header__sideBar-last-wrapper( type="button" @click="clickOnButton1")
+            a(href="#").header__sideBar-last-wrapper-lang(:class="{'active' : lang}") Мова UA
+              .header__sideBar-last-wrapper-lang-img(:class="{'active' : lang}")
+            .header__sideBar-last-wrap(:class="{'active' : lang}")
+              a(href="#").header__sideBar-last-wrap-lang Language EN
+              a(href="#").header__sideBar-last-wrap-lang Язык RU
         .header__sideBar-button 
           a(href="#").header__sideBar-button-link
             img(src="~/assets/img/crest.svg", alt=" Герб України").header__sideBar-button-link-img
@@ -61,9 +65,10 @@
 
 <script>
 export default {
-    data() {
+  data() {
             return {
                 modal: false,
+                lang: false
                 
             }
         },
@@ -74,13 +79,32 @@ export default {
 
         methods: {
             clickOnButton() {
-               if (this.modal) {
-                    this.modal = false;
-               } else {
-                   this.modal = true;
-               }
+               this.modal = ! this.modal
+            },
+            clickOnButton1() {
+              this.lang = ! this.lang
             }
         },
+    // data() {
+    //         return {
+    //             modal: false,
+                
+    //         }
+    //     },
+
+    //     mounted() {
+    //         console.log("Header");            
+    //     },
+
+    //     methods: {
+    //         clickOnButton() {
+    //            if (this.modal) {
+    //                 this.modal = false;
+    //            } else {
+    //                this.modal = true;
+    //            }
+    //         }
+    //     },
 }
 </script>
 
@@ -178,23 +202,45 @@ export default {
 
       &-lang {
         display: flex;
-        align-items: center;
         border: none;
         background: none;
         color: #fff;
         width: 33px;
         height: 15px;
         margin: auto;
+        justify-content: center;
 
         &-btn {
           background: url("../assets/img/arrLangOp.svg") no-repeat 100% 50%;
           border: none;
           color: #fff;
+          
 
 
           &:hover {
             color: #F9224B;
             background: url("../assets/img/arrLangCl.svg") no-repeat 100% 50%;
+            }
+          &.active {
+            color: #F9224B;
+            background: url("../assets/img/arrLangCl.svg") no-repeat 70% 50%;
+          }
+            &-select {
+              display: none;
+              &-ru {
+                padding-top: 8px;
+              }
+              &-en {
+                margin-top: 16px;
+              }
+              &.active {
+                display: flex;
+                flex-direction: column;
+                background: #3F3F3F;
+                width: 57px;
+                height: 62px;
+                border-radius: 5px;
+              }
             }
 
           
@@ -286,15 +332,38 @@ export default {
       &-lang {
         display: none;
         justify-content: space-between;
+        margin-bottom: 16px;
+        align-items: center;
         &.active {
           color: #F9224B;
         }
+        &-img {
+          background: url("~/assets/img/arrLangW.svg") no-repeat 100% 50%;
+          width: 16px;
+          height: 8px;
+          &.hover {
+            background: url("~/assets/img/arrLangR.svg") no-repeat 100% 50%;
+          }
+           &.active {
+            background: url("~/assets/img/arrLangR.svg") no-repeat 100% 50%;
+          }
+        }
       }
     }
-    &-lang {
-         margin-bottom: 16px;
+    &-wrap {
+      display: none;
+      &.active {
+        display: flex;
+        flex-direction: column;
+      }
+      &-lang {
+        margin-bottom: 16px;
+        &.hover {
+          color: #F9224B;
+        }
         
-       }
+      }
+    }
   }
   &-button {
     display: none;

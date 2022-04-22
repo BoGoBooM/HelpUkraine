@@ -1,12 +1,12 @@
 <template lang="pug">
-  section.sixth
+section.sixth
     .sixth__wrapper
         .sixth__wrapper-faq
             .sixth__wrapper-faq-head
                 h2.sixth__wrapper-faq-head-title FAQ
                 p.sixth__wrapper-faq-head-text Ми зібрали для вас відповіді на найпоширеніші запитання
             ul.sixth__wrapper-faq-list
-                li.sixth__wrapper-faq-list-item(:class="{'active' : modal1}")
+                li.sixth__wrapper-faq-list-item(v-on:click="active" :class="{'active' : modal1}")
                     .sixth__wrapper-faq-list-item-wrap
                         h4.sixth__wrapper-faq-list-item-wrap-question Чому я можу вам довіряти?
                         p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal1}") Всі ми - реальні люди. Всі ми знаходимося на території України. Ми - звичайні студенти, які вирішили бути корисними своїй країні. Щоб спростувати будь-які сумніви, ми проводимо звітність і робимо нашу справу абсолютно прозоро.
@@ -120,10 +120,10 @@
 export default {
     data() {
             return {
-                modal1: false,
-                modal2: false,
-                modal3: false,
-                modal4: false
+                modal: false,
+                // modal2: false,
+                // modal3: false,
+                // modal4: false
                 
             }
         },
@@ -133,11 +133,21 @@ export default {
         },
 
         methods: {
-            clickOnButton() {
-               this.modal1 != this.modal2 != this.modal3 != this.modal4
+            clickOnButton() { 
+                if (this.modal = ! this.modal) {
+                    this.modal = false 
+                } else {
+                    this.modal = true
+                }
+               
             }
         },
 }
+// if (this.modal1) {
+//                    this.modal1 = false
+//                } else {
+//                    this.modal1 = true
+//                }
 </script>
 
 <style lang="scss" scoped>
