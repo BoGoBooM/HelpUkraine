@@ -3,33 +3,33 @@ section.fourth
     .fourth__wrapper
         .fourth__wrapper-wrap 
             .fourth__wrapper-wrap-head 
-                h2.fourth__wrapper-wrap-head-title Процес нашої роботи дуже простий
-                p.fourth__wrapper-wrap-head-text Допомагаємо всім, хто цього потребує
+                h2.fourth__wrapper-wrap-head-title Процесс нашей работы очень прост
+                p.fourth__wrapper-wrap-head-text Помогаем всем, кто в этом нуждается
             .fourth__wrapper-wrap-description
-                p.fourth__wrapper-wrap-description-text Відповідально ставимося до кожного етапу. Для нас важлива чесність та прозорість. Ми віримо, що добро завжди перемагає зло! 
-                a(href="#forms").fourth__wrapper-wrap-description-link Отримати допомогу
+                p.fourth__wrapper-wrap-description-text Ответственно относимся к каждому этапу. Для нас важна честность и прозрачность. Мы верим, что добро всегда побеждает зло! 
+                a(href="#forms").fourth__wrapper-wrap-description-link Получить помощь
         .fourth__wrapper-help 
             ul.fourth__wrapper-help-list 
                 li.fourth__wrapper-help-list-item
                     span.fourth__wrapper-help-list-item-numb 01
-                    p.fourth__wrapper-help-list-item-text Поширення інформації про збір  коштів та власне збір коштів.  Тому були б вдячні вашим  репостам!
+                    p.fourth__wrapper-help-list-item-text Распространение информации о сборе средств и, собственно, сбор средств. Поэтому были бы благодарны вашим репостам!
                 li.fourth__wrapper-help-list-item
                     span.fourth__wrapper-help-list-item-numb 02
-                    p.fourth__wrapper-help-list-item-text Закупка необхідної амуніції та  гуманітарної допомоги для  наших захисників та лікарень.
+                    p.fourth__wrapper-help-list-item-text Закупка необходимой амуниции и гуманитарной помощи наших защитников и больниц.
                 li.fourth__wrapper-help-list-item
                     span.fourth__wrapper-help-list-item-numb 03
-                    p.fourth__wrapper-help-list-item-text Все необхідне ми власноруч доставляємо та передаємо прямо в руки. Звітуємо про це на нашому <a class="fourth__wrapper-help-list-item-text-link" href="#numbers">сайті</a> та в соц мережах.
+                    p.fourth__wrapper-help-list-item-text Все необходимое мы доставляем и передаем прямо в руки. Отчитываемся об этом на нашем <a class="fourth__wrapper-help-list-item-text-link" href="#numbers">сайте</a> и в социальных сетях.
         .fourth__wrapper-report(id="report")
             .fourth__wrapper-report-info 
-                h2.fourth__wrapper-report-info-title Звітність про виконану роботу
+                h2.fourth__wrapper-report-info-title Отчетность о проделанной работе
                 .fourth__wrapper-report-info-paragraph 
                     .fourth__wrapper-report-info-paragraph-wrap
-                        p.fourth__wrapper-report-info-paragraph-wrap-text Ми активно ведемо наші акаунти в соціальних мережах Instagram та Facebook, де транслюємо нашу діяльність. Чому це важливо? 
-                        p.fourth__wrapper-report-info-paragraph-wrap-text Це допомагає нам освітлювати нашу роботу в сторі та постах. Ми регулярно звітуємо про зібрану суму та показуємо, що потрібно зараз допомагати одне одному в такий тяжкий для нашої країни час. 
-                        p.fourth__wrapper-report-info-paragraph-wrap-text Будемо безмежно вдячні вашій підтримці, репостам та поширенню інформації про збір коштів.
+                        p.fourth__wrapper-report-info-paragraph-wrap-text Мы активно ведем наши аккаунты в социальных сетях Instagram и Facebook, где транслируем нашу деятельность. Почему это важно?
+                        p.fourth__wrapper-report-info-paragraph-wrap-text Это помогает нам освещать нашу работу в истории и постах. Мы регулярно отчитываемся о собранной сумме и показываем, что нужно сейчас помогать друг другу в столь тяжелое для нашей страны время.
+                        p.fourth__wrapper-report-info-paragraph-wrap-text Будем безгранично благодарны вашей поддержке, репостам и распространению информации о сборе средств.
                     .fourth__wrapper-report-info-paragraph-box
-                        p.fourth__wrapper-report-info-paragraph-box-text Результати нашої праці та вашого внеску в оборону нашої держави ви можете бачити щодня на наших світлинах.
-                        p.fourth__wrapper-report-info-paragraph-box-follow Слідкуй за нами в соцмережах:
+                        p.fourth__wrapper-report-info-paragraph-box-text Результаты нашего труда и вашего вклада в оборону нашего государства вы можете видеть каждый день на наших фотографиях.
+                        p.fourth__wrapper-report-info-paragraph-box-follow Следи за нами в соцсетях:
                         .fourth__wrapper-report-info-paragraph-box-links
                             a(href="#").fourth__wrapper-report-info-paragraph-box-links-link Instagram
                                 img(src="~/assets/img/arrLink.svg" alt="Соціальна мережа").fourth__wrapper-report-info-paragraph-box-links-link-img
@@ -207,7 +207,7 @@ export default {
 }
 @media screen and (min-width: 768px) and (max-width: 1439px){
 .fourth {
-    padding: 100px 0 200px;
+    padding: 100px 0 260px;
     &__wrapper {
 
         &-wrap {
@@ -317,7 +317,7 @@ export default {
                     max-width: 330px;
                     position: absolute;
                     left: 11px;
-                    top: 133px;
+                    top: 193px;
                 }
             }
         }

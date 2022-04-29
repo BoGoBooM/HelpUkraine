@@ -3,33 +3,33 @@ section.fourth
     .fourth__wrapper
         .fourth__wrapper-wrap 
             .fourth__wrapper-wrap-head 
-                h2.fourth__wrapper-wrap-head-title Процес нашої роботи дуже простий
-                p.fourth__wrapper-wrap-head-text Допомагаємо всім, хто цього потребує
+                h2.fourth__wrapper-wrap-head-title The process of our work is very simple
+                p.fourth__wrapper-wrap-head-text We help everyone who needs it
             .fourth__wrapper-wrap-description
-                p.fourth__wrapper-wrap-description-text Відповідально ставимося до кожного етапу. Для нас важлива чесність та прозорість. Ми віримо, що добро завжди перемагає зло! 
-                a(href="#forms").fourth__wrapper-wrap-description-link Отримати допомогу
+                p.fourth__wrapper-wrap-description-text We treat each stage responsibly.  Honesty and transparency are important to us.  We believe that good will always triumph over evil! 
+                a(href="#forms").fourth__wrapper-wrap-description-link Get help
         .fourth__wrapper-help 
             ul.fourth__wrapper-help-list 
                 li.fourth__wrapper-help-list-item
                     span.fourth__wrapper-help-list-item-numb 01
-                    p.fourth__wrapper-help-list-item-text Поширення інформації про збір  коштів та власне збір коштів.  Тому були б вдячні вашим  репостам!
+                    p.fourth__wrapper-help-list-item-text  Disseminating information about fundraising and actually the fundraising. So we would be grateful for your reposts!
                 li.fourth__wrapper-help-list-item
                     span.fourth__wrapper-help-list-item-numb 02
-                    p.fourth__wrapper-help-list-item-text Закупка необхідної амуніції та  гуманітарної допомоги для  наших захисників та лікарень.
+                    p.fourth__wrapper-help-list-item-text Purchase of personal protective equipment, ammunition and humanitarian aid for our defenders and hospitals.
                 li.fourth__wrapper-help-list-item
                     span.fourth__wrapper-help-list-item-numb 03
-                    p.fourth__wrapper-help-list-item-text Все необхідне ми власноруч доставляємо та передаємо прямо в руки. Звітуємо про це на нашому <a class="fourth__wrapper-help-list-item-text-link" href="#numbers">сайті</a> та в соц мережах.
+                    p.fourth__wrapper-help-list-item-text we distribute and deliver everything collected from hand to hand. reporting is carried out on this <a class="fourth__wrapper-help-list-item-text-link" href="#numbers">website</a>, social networks and telegram channel.
         .fourth__wrapper-report(id="report")
             .fourth__wrapper-report-info 
-                h2.fourth__wrapper-report-info-title Звітність про виконану роботу
+                h2.fourth__wrapper-report-info-title Reporting on work performed
                 .fourth__wrapper-report-info-paragraph 
                     .fourth__wrapper-report-info-paragraph-wrap
-                        p.fourth__wrapper-report-info-paragraph-wrap-text Ми активно ведемо наші акаунти в соціальних мережах Instagram та Facebook, де транслюємо нашу діяльність. Чому це важливо? 
-                        p.fourth__wrapper-report-info-paragraph-wrap-text Це допомагає нам освітлювати нашу роботу в сторі та постах. Ми регулярно звітуємо про зібрану суму та показуємо, що потрібно зараз допомагати одне одному в такий тяжкий для нашої країни час. 
-                        p.fourth__wrapper-report-info-paragraph-wrap-text Будемо безмежно вдячні вашій підтримці, репостам та поширенню інформації про збір коштів.
+                        p.fourth__wrapper-report-info-paragraph-wrap-text Reporting on work performed.  We actively maintain our accounts on social networks Instagram and Facebook, where we broadcast our activities.  Why is this important?   
+                        p.fourth__wrapper-report-info-paragraph-wrap-text This helps us to cover our work in pages and posts.  We regularly report on the amount collected and show that we need to help each other now at such a difficult time for Ukraine.  
+                        p.fourth__wrapper-report-info-paragraph-wrap-text  We will be very grateful for your support, reposts and dissemination of information about fundraising.
                     .fourth__wrapper-report-info-paragraph-box
-                        p.fourth__wrapper-report-info-paragraph-box-text Результати нашої праці та вашого внеску в оборону нашої держави ви можете бачити щодня на наших світлинах.
-                        p.fourth__wrapper-report-info-paragraph-box-follow Слідкуй за нами в соцмережах:
+                        p.fourth__wrapper-report-info-paragraph-box-text  You can see the results of our work and your contribution to the defense of our state every day in our photos.
+                        p.fourth__wrapper-report-info-paragraph-box-follow Follow us on social networks:
                         .fourth__wrapper-report-info-paragraph-box-links
                             a(href="#").fourth__wrapper-report-info-paragraph-box-links-link Instagram
                                 img(src="~/assets/img/arrLink.svg" alt="Соціальна мережа").fourth__wrapper-report-info-paragraph-box-links-link-img

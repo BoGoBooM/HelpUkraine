@@ -2,70 +2,40 @@
 section.charity
     .charity__wrapper
         .charity__wrapper-info(id="numbers") 
-            p.charity__wrapper-info-text Благодійний фонд 
+            p.charity__wrapper-info-text Благотворительный фонд 
             .charity__wrapper-info-text-indent 
-            p.charity__wrapper-info-text Гуманітарна допомога
-        h1.charity__wrapper-title На потреби Збройних Сил України та тим, хто постраждав внаслідок війни
+            p.charity__wrapper-info-text Гуманитарная помощь 
+        h1.charity__wrapper-title На нужды Вооруженных Сил Украины и пострадавших в результате войны
         .charity__wrapper-content
             .charity__wrapper-content-wrapper
-                a(href="#").charity__wrapper-content-wrapper-btn Підтримати
-                p.charity__wrapper-content-wrapper-text Допоможи українській армії та всім потребуючим.<br> Твоя допомога може стати вирішальною для життя людини
+                a(href="#").charity__wrapper-content-wrapper-btn Пожертвовать
+                p.charity__wrapper-content-wrapper-text Помоги украинской армии и всем нуждающимся.<br> Твоя помощь может стать решающей для жизни человека
             
         .charity__wrapper-donations
             ul.charity__wrapper-donations-list
                 li.charity__wrapper-donations-list-item
                     .charity__wrapper-donations-list-item-wrap
                         span.charity__wrapper-donations-list-item-wrap-title > 250.000₴
-                        p.charity__wrapper-donations-list-item-wrap-text Було зібрано небайдужими людьми
+                        p.charity__wrapper-donations-list-item-wrap-text Было собрано неравнодушными людьми
                 li.charity__wrapper-donations-list-item
                     .charity__wrapper-donations-list-item-wrap
-                        span.charity__wrapper-donations-list-item-wrap-title > 150шт
-                        p.charity__wrapper-donations-list-item-wrap-text Бронежелетів доставлено до наших <br> захисників
+                        span.charity__wrapper-donations-list-item-wrap-title > 150 шт
+                        p.charity__wrapper-donations-list-item-wrap-text Бронежелетов доставлено к нашим защитникам
                 li.charity__wrapper-donations-list-item
                     .charity__wrapper-donations-list-item-wrap
-                        span.charity__wrapper-donations-list-item-wrap-title 3597 людей
-                        p.charity__wrapper-donations-list-item-wrap-text Долучились до нашої діяльності та <br> внесли свій вклад в перемогу України
+                        span.charity__wrapper-donations-list-item-wrap-title 3597 человек
+                        p.charity__wrapper-donations-list-item-wrap-text Присоединились к нашей деятельности и <br> внесли свой вклад в победу Украины
                 li.charity__wrapper-donations-list-item.time
                     .charity__wrapper-donations-list-item-timer 
-                        .charity__wrapper-donations-list-item-timer-time 24.02.2022 04:00
-                        .charity__wrapper-donations-list-item-timer-text Час початку війни України проти Росії
+                        .charity__wrapper-donations-list-item-timer-time 48 дней 17 часов 
+                        .charity__wrapper-donations-list-item-timer-text С начала войны в Украине против России
 
 
 </template>
 
 <script>
-// new Vue({
-//     el: '#timer',
-//     data: {
-//         time: " "
-//     },
-//     methods: {
-//         setInterval: function () {
-//             var startWar = Date.parse('2022-02-24T04:00:00');
-//             return startWar;
-//             var justNow = new Date();
-//             return justNow;
-//             let passed = justNow.getTime() - startWar;
-//             return passed;
-//             let passedDay = Math.floor(passed/(1000*60*60*24));
-//             return passedDay;
-//             let passedHours = Math.floor((passed - passedDay * (1000*60*60*24))/(1000*60*60));
-//             console.log(passedHours);
-//             let passedMinute = Math.floor((passed - passedDay * (1000*60*60*24) - passedHours * (1000*60*60))/(1000*60));
-//             console.log(passedMinute); 
-//             let passedSeconds = Math.floor((passed - passedDay * (1000*60*60*24) - passedHours * (1000*60*60) - passedMinute * (1000*60))/1000);
-//             console.log(passedSeconds);
-
-//         }
-//     }
-// })
 export default {
-//   data: () => ({
-//             displayDays: 59,
-//             displayHours: 22,
-//             displayMinutes: 10,
-//             displaySeconds: 00
-//         })
+
 }
 </script>
 

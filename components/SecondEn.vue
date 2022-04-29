@@ -1,16 +1,16 @@
 <template lang="pug">
-section.team(id="about") 
+section.team(id="about")
     .team__wrapper
-        h2.team__wrapper-title Команда студентів, які згуртувались, щоб <br> допомогти своїй країні
+        h2.team__wrapper-title A team of students who came together to help their country
         .team__wrapper-page 
             img(src="~/assets/img/photo1.png" alt="Гуманітарна допомога").team__wrapper-page-img
             .team__wrapper-page-info
                 .team__wrapper-page-info-wrap
-                    p.team__wrapper-page-info-wrap-text.left Нашою ціллю стала допомога армії, територіальній обороні, звичайним людям та дітям. Ми намагаємось забезпечити цих людей необхідними речами: амуніцією, їжею, засобами особистої гігієни, ліками та іншим. Команда проводить збори своїми силами, закуповуємо необхідні речі, та доставляємо їх особисто в руки.
-                    p.team__wrapper-page-info-wrap-text.bottom Кожен із вас може зробити цей внесок та врятувати чиєсь життя. Всього за один клік ви можете допомогти фінансово, та надіслати бронежилет війсковому, який не спить ночами та захищає український народ від загарбників.
+                    p.team__wrapper-page-info-wrap-text.left We aimed to help the army, territorial defense, ordinary people and children, trying to provide these people with the necessary things: ammunition, food, personal hygiene products, medicines and more.  The team raises funds on their own, we buy the necessary things and deliver them personally.
+                    p.team__wrapper-page-info-wrap-text.bottom Each of you can contribute and save someone's life.  In just one click, you can help financially and send a bulletproof vest to a soldier who does not sleep at night and protects the Ukrainian people from invaders.
                 .team__wrapper-page-info-paragraph
                     .team__wrapper-page-info-paragraph-mark
-                    p.team__wrapper-page-info-paragraph-text  Варто зазначити, що нам, як студентам, тяжко забезпечити всі фінансові витрати. <br> Тому для нас важлива ваша підтримка. Всі звіти про витрати можна отримати в <a href="#" class="team__wrapper-page-info-paragraph-text-link" >Telegram</a> та <a href="#" class="team__wrapper-page-info-paragraph-text-link">Instagram</a> 
+                    p.team__wrapper-page-info-paragraph-text It is worth to note, it is difficult for us, as a students, to provide all the financial costs.  That is why your support is important to us.  All expense reports you can see on <a href="#" class="team__wrapper-page-info-paragraph-text-link" >Telegram</a> and <a href="#" class="team__wrapper-page-info-paragraph-text-link">Instagram</a> 
         .team__wrapper-photos
             img(src="~/assets/img/photo2.png" alt="Гуманітарна допомога").team__wrapper-photos-img
             img(src="~/assets/img/photo3.png" alt="Гуманітарна допомога").team__wrapper-photos-img
@@ -32,6 +32,8 @@ export default {
         padding: 150px 0;
         display: flex;
         justify-content: center;
+        max-width: 1165px;
+        margin: 0 auto;
         &__wrapper {
             padding-left: 64px;
             &-title {
@@ -68,6 +70,7 @@ export default {
                     &-paragraph {
                         display: flex;
                         margin-bottom: 76px;
+                        max-width: 860px;
 
                         &-mark {
                             content: " ";

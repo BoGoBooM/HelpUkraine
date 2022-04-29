@@ -1,79 +1,56 @@
 <template lang="pug">
 section.third(id="charity")
     .third__wrapper
-        h2.third__wrapper-title Врятуй чиєсь життя та допоможи тим,  хто цього потребує
+        h2.third__wrapper-title Save someone's life and help those in need
         .third__wrapper-grown
             img(src="~/assets/img/photo4.png" alt="Збір грошей для допомоги").third__wrapper-grown-img
             ul.third__wrapper-grown-list
                 li.third__wrapper-grown-list-item
                     span.third__wrapper-grown-list-item-numb 01
-                    p.third__wrapper-grown-list-item-text Збір коштів на потреби армії
+                    p.third__wrapper-grown-list-item-text Fundraising for the Ukrainian army
                     a(href="#").third__wrapper-grown-list-item-link 
                         button.third__wrapper-grown-list-item-link-btn 
-                        button.third__wrapper-grown-list-item-link-btn-tablet Підтримати
+                        button.third__wrapper-grown-list-item-link-btn-tablet Support
                 li.third__wrapper-grown-list-item
                     span.third__wrapper-grown-list-item-numb 02
-                    p.third__wrapper-grown-list-item-text Збір коштів на медикаменти 
+                    p.third__wrapper-grown-list-item-text Fundraising for medicines 
                     a(href="#").third__wrapper-grown-list-item-link 
                         button.third__wrapper-grown-list-item-link-btn
-                        button.third__wrapper-grown-list-item-link-btn-tablet Підтримати
+                        button.third__wrapper-grown-list-item-link-btn-tablet Support
                 li.third__wrapper-grown-list-item
                     span.third__wrapper-grown-list-item-numb 03
-                    p.third__wrapper-grown-list-item-text Збір коштів на їжу в райони гуманітарної катастрофи
+                    p.third__wrapper-grown-list-item-text Collection  of funds for food in areas of humanitarian catastrophe
                     a(href="#").third__wrapper-grown-list-item-link 
                         button.third__wrapper-grown-list-item-link-btn
-                        button.third__wrapper-grown-list-item-link-btn-tablet Підтримати
+                        button.third__wrapper-grown-list-item-link-btn-tablet Support
         .third__wrapper-expens
             ul.third__wrapper-expens-list
                 li.third__wrapper-expens-list-item
-                    p.third__wrapper-expens-list-item-title Потреби армії
+                    p.third__wrapper-expens-list-item-title Needs of the army
                     .third__wrapper-expens-list-item-wrap
                         .third__wrapper-expens-list-item-wrap-info
                             span.third__wrapper-expens-list-item-wrap-info-figures 204.540 ₴
-                            p.third__wrapper-expens-list-item-wrap-info-text Витрачено на бронежилети, каски, уніформу та амуніцію для військових
+                            p.third__wrapper-expens-list-item-wrap-info-text Spent on bulletproof vests, helmets, uniforms and ammunition for the military
                 li.third__wrapper-expens-list-item
-                    p.third__wrapper-expens-list-item-title Медикаменти
+                    p.third__wrapper-expens-list-item-title Medicines
                     .third__wrapper-expens-list-item-wrap
                         .third__wrapper-expens-list-item-wrap-info
                             span.third__wrapper-expens-list-item-wrap-info-figures 32.690 ₴
-                            p.third__wrapper-expens-list-item-wrap-info-text Витрачено на ліки для діабетиків та тих, хто їх потребує в першу чергу
+                            p.third__wrapper-expens-list-item-wrap-info-text Spent on medicines for diabetics and those who need them in the first place
                 li.third__wrapper-expens-list-item
-                    p.third__wrapper-expens-list-item-title Їжа та речі першої необхідності
+                    p.third__wrapper-expens-list-item-title Food and essentials
                     .third__wrapper-expens-list-item-wrap
                         .third__wrapper-expens-list-item-wrap-info
                             span.third__wrapper-expens-list-item-wrap-info-figures 24.590 ₴
-                            p.third__wrapper-expens-list-item-wrap-info-text Витрачено на допомогу в районах гуманітарної катастрофи
+                            p.third__wrapper-expens-list-item-wrap-info-text Spent on aid in areas of humanitarian catastrophe
         .third__wrapper-player
-            iframe(id='video' v-bind:key="video" ref="video" controls width="1312" height="720" src="https://www.youtube.com/embed/S1W_PuL5ASs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen).third__wrapper-player-video
-            //- button(type="button"  v-if="showButton" @click="onPlay" id="btn"  ).third__wrapper-player-btn play
+            iframe(width="1312" height="720" src="https://www.youtube.com/embed/S1W_PuL5ASs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen).third__wrapper-player-video
+            //- button(type="button").third__wrapper-player-btn play
 
 </template>
 
 <script>
-
 export default {
-  
-
-
-// data() {
-//             return { showButton: true };
-//         },
-//         onClick() {
-//              this.$refs.video.play()
-//         },
-
-
-//         onPlay() {
-//         if (this.showButton) {
-//             this.$refs.video.play()
-//         } else {
-//             this.$refs.video.pause()
-//         }
-//         this.showButton = !this.showButton;
-//         }   
-
-
-
 
 }
 </script>
@@ -248,7 +225,6 @@ export default {
             }
 
             &-btn {
-                display: block;
                 color: #F9224B;
                 cursor: pointer;
                 position: absolute;
@@ -262,10 +238,6 @@ export default {
                 outline: 6px solid #212126;
                 outline-offset: -1px;
                 border-radius: 66px;
-                z-index: 1;
-                &.disactive {
-                    display: none;
-                }
             }
         }
     }

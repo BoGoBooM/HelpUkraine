@@ -1,45 +1,45 @@
 <template lang="pug">
 section.fifth(id="forms")
     .fifth__wrapper
-        h2.fifth__wrapper-title Маєш можливість допомогти або сам потребуеш допомоги?
+        h2.fifth__wrapper-title Do you have the opportunity to help or do you need help?
         ul.fifth__wrapper-list 
             li.fifth__wrapper-list-item 
-                button(type="button" @click="clickOnButton" ).fifth__wrapper-list-item-btn(:class="{'active' : ! modal}") Хочу допомогти
+                button(type="button" @click="clickOnButton" ).fifth__wrapper-list-item-btn(:class="{'active' : ! modal}") I want to help
             li.fifth__wrapper-list-item 
-                button(type="button" @click="clickOnButton" ).fifth__wrapper-list-item-btn(:class="{'active' : modal}") Потребую допомоги
+                button(type="button" @click="clickOnButton" ).fifth__wrapper-list-item-btn(:class="{'active' : modal}")  I need help
         .fifth__wrapper-wrap(:class="{'active' : modal}" )
-            form(action="~/components/telegramUaNeed.php" method="post").fifth__wrapper-wrap-form
-                input(type="text" placeholder="Ваше ім’я" name="user_name" required).fifth__wrapper-wrap-form-name
+            form(action="~/components/telegramEngNeed.php" method="post").fifth__wrapper-wrap-form
+                input(type="text" placeholder="Name" name="user_name" required).fifth__wrapper-wrap-form-name
                 .fifth__wrapper-wrap-form-menu
                     a.fifth__wrapper-wrap-form-menu-contry
                         img(src="~/assets/img/Ua.svg" alt="Номер країни").fifth__wrapper-wrap-form-menu-contry-img
                         //- img(src="~/assets/img/arrNumb.svg" alt="").fifth__wrapper-wrap-form-menu-contry-arrow
                     input(type="tel" placeholder="+380 (99) 999-99-99" name="user_phone" required).fifth__wrapper-wrap-form-menu-phone
-                input(type="text" placeholder="Ваше місто" name="user_locate" required).fifth__wrapper-wrap-form-city
-                input(type="text" placeholder="Чим вам потрібно допомогти?" name="user_need" ).fifth__wrapper-wrap-form-help
+                input(type="text" placeholder="location (city)" name="user_locate" required).fifth__wrapper-wrap-form-city
+                input(type="text" placeholder="What do you need to help?" name="user_need" ).fifth__wrapper-wrap-form-help
                 .fifth__wrapper-wrap-form-submit 
-                    input(type="submit" value="Відправити").fifth__wrapper-wrap-form-submit-btn
-                    p.fifth__wrapper-wrap-form-submit-confid Натискаючи кнопку «відправити» я даю згоду на обробку персональних даних
+                    input(type="submit" value="Send").fifth__wrapper-wrap-form-submit-btn
+                    p.fifth__wrapper-wrap-form-submit-confid By clicking the "send" button, I agree to the processing of personal data.
             .fifth__wrapper-wrap-info
-                p.fifth__wrapper-wrap-info-text Яйщо ви опинились в скрутному положенні, зверніться до нас, опишіть вашу проблему і ми зробимо все можливе, щоб допомогти вам! 
-                p.fifth__wrapper-wrap-info-text Ви обов’язково будете почуті, адже, тільки, допомогая один одному, ми переможемо ворога!
+                p.fifth__wrapper-wrap-info-text If you are in a difficult situation, contact us, describe your problem and we will do everything possible to help you! 
+                p.fifth__wrapper-wrap-info-text You will definitely be heard, because only by helping each other will we defeat the enemy!
                 img(src="~/assets/img/photo6.png" alt="Допомога постраждалим").fifth__wrapper-wrap-info-img
         .fifth__wrapper-wrap(:class="{'active' : ! modal}" )
-            form(action="~/components/telegramUaCan.php").fifth__wrapper-wrap-form
-                input(type="text" placeholder="Ваше ім’я" name="user_name" required).fifth__wrapper-wrap-form-name
+            form(action="~/components/telegramEngCan.php").fifth__wrapper-wrap-form
+                input(type="text" placeholder="Name" name="user_name" required).fifth__wrapper-wrap-form-name
                 .fifth__wrapper-wrap-form-menu
                     a.fifth__wrapper-wrap-form-menu-contry
                         img(src="~/assets/img/Ua.svg" alt="Номер країни").fifth__wrapper-wrap-form-menu-contry-img
                         //- img(src="~/assets/img/arrNumb.svg" alt="").fifth__wrapper-wrap-form-menu-contry-arrow
                     input(type="tel" placeholder="+380 (99) 999-99-99" name="user_phone" required).fifth__wrapper-wrap-form-menu-phone
-                input(type="text" placeholder="Ваше місто" name="user_locate" required).fifth__wrapper-wrap-form-city
-                input(type="text" placeholder="Чим ви можете допомогти?" name="user_can").fifth__wrapper-wrap-form-help
+                input(type="text" placeholder="location (city)" name="user_locate" required).fifth__wrapper-wrap-form-city
+                input(type="text" placeholder="How can you help?" name="user_can").fifth__wrapper-wrap-form-help
                 .fifth__wrapper-wrap-form-submit 
-                    input(type="submit" value="Відправити").fifth__wrapper-wrap-form-submit-btn
-                    p.fifth__wrapper-wrap-form-submit-confid Натискаючи кнопку «відправити» я даю згоду на обробку персональних даних
+                    input(type="submit" value="Send").fifth__wrapper-wrap-form-submit-btn
+                    p.fifth__wrapper-wrap-form-submit-confid By clicking the "send" button, I agree to the processing of personal data.
             .fifth__wrapper-wrap-info
-                p.fifth__wrapper-wrap-info-text Стань частиною нашої команди, зроби свій внесок в перемогу України. Передай одяг, їжу, ліки, допоможи з евакуацією або запропонуй іншу допомогу сам. 
-                p.fifth__wrapper-wrap-info-text Врятуй чиєсь життя, адже, тільки, допомогаючи один одному, ми переможемо ворога!
+                p.fifth__wrapper-wrap-info-text Become part of our team, contribute to the victory of Ukraine.  Donate clothes, food, medicine, help with evacuation or offer other help.  
+                p.fifth__wrapper-wrap-info-text Save someone's life, because only by helping each other will we defeat the enemy!
                 img(src="~/assets/img/photo5.png" alt="Допомога постраждалим").fifth__wrapper-wrap-info-img
             
 </template>
@@ -63,9 +63,7 @@ export default {
             }
         },
     
-};
-
-
+}
 </script>
 
 <style lang="scss" scoped>

@@ -4,60 +4,60 @@ section.sixth(id="faq")
         .sixth__wrapper-faq
             .sixth__wrapper-faq-head
                 h2.sixth__wrapper-faq-head-title FAQ
-                p.sixth__wrapper-faq-head-text Ми зібрали для вас відповіді на найпоширеніші запитання
+                p.sixth__wrapper-faq-head-text Мы собрали для вас ответы на самые распространенные вопросы
             ul.sixth__wrapper-faq-list
                 li.sixth__wrapper-faq-list-item( :class="{'active' : modal1}")
                     .sixth__wrapper-faq-list-item-wrap
-                        h4.sixth__wrapper-faq-list-item-wrap-question Чому я можу вам довіряти?
-                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal1}") Всі ми - реальні люди. Всі ми знаходимося на території України. Ми - звичайні студенти, які вирішили бути корисними своїй країні. Щоб спростувати будь-які сумніви, ми проводимо звітність і робимо нашу справу абсолютно прозоро.
+                        h4.sixth__wrapper-faq-list-item-wrap-question Почему я могу вам доверять?
+                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal1}") Все мы – реальные люди. Все мы находимся на территории Украины. Мы – обычные студенты, решившие быть полезными своей стране. Чтобы опровергнуть какие-либо сомнения, мы проводим отчетность и делаем наше дело абсолютно прозрачно.
                     .sixth__wrapper-faq-list-item-btn(type="button" @click="clickOnButton1" :class="{'active' : modal1}")
                 li.sixth__wrapper-faq-list-item(:class="{'active' : modal2}")
                     .sixth__wrapper-faq-list-item-wrap
                         h4.sixth__wrapper-faq-list-item-wrap-question Як я можу допомогти?
-                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal2}") •Фінансово - пожертвувати кошти <br><br> •Матеріально - продукти харчування, речі, медикаменти, пальне, транспорт. Для цього потрібно  заповнити коротку форму (*скрол )та надати контакт для зв‘язку і співпраці з вами. <br><br>•Фізично - долучитися до нашої команди<br><br>•Словесно - підтримувати нас розповсюдженням інформації репостом на своїй сторінці або за допомогою посилання на сайт
+                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal2}") •Финансово – пожертвовать средства <br><br> •Материально – продукты питания, вещи, медикаменты, горючее, транспорт. Для этого нужно заполнить короткую <a class="sixth__wrapper-faq-list-item-wrap-text-link" href="#forms">форму</a> и предоставить контакт для связи и сотрудничества с вами. <br><br>•Физически - присоединиться к нашей команде<br><br>•Словесно - поддерживать нас распространением информации репостом на своей странице или ссылкой на сайт
                     .sixth__wrapper-faq-list-item-btn(type="button" @click="clickOnButton2" :class="{'active' : modal2}")
                 li.sixth__wrapper-faq-list-item(:class="{'active' : modal3}")
                     .sixth__wrapper-faq-list-item-wrap
-                        h4.sixth__wrapper-faq-list-item-wrap-question Чому ми нічого не заробляємо на цьому?
-                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal3}")  Ми - волонтери. Нам не дозволяє совість класти щось до свого карману, поки люди страждають від гуманітароної катастрофи та агресії з боку РФ. Навіть, те що ми вже зробили і робимо зараз ми вважаємо замалим внеском. Тому робимо все щоб допомогти кожному! І були б раді вітати в своїй команді однодумців)
+                        h4.sixth__wrapper-faq-list-item-wrap-question Почему мы ничего не зарабатываем на этом?
+                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal3}")  Мы – волонтеры. Нам не позволяет совесть класть что-то в свою карман, пока люди страдают гуманитарной катастрофой и агрессией со стороны РФ. Даже то, что мы уже сделали и делаем сейчас, мы считаем малым вкладом. Поэтому делаем все, чтобы помочь каждому! И были бы рады приветствовать в своей команде единомышленников)
                     .sixth__wrapper-faq-list-item-btn(type="button" @click="clickOnButton3" :class="{'active' : modal3}")
                 li.sixth__wrapper-faq-list-item(:class="{'active' : modal4}")
                     .sixth__wrapper-faq-list-item-wrap
-                        h4.sixth__wrapper-faq-list-item-wrap-question Чи будете ви продовжувати свою діяльність після війни?
-                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal4}") Якщо буде потреба в зборі коштів для відбудування нашої країни та рідних домівок, що залишилися розбитими від російських ракет ми обов‘язково допоможемо. Наразі не можемо дати стовідсоткової відповіді на це питання але обов‘язково зробимо все можливе!
+                        h4.sixth__wrapper-faq-list-item-wrap-question Будете ли вы продолжать свою деятельность после войны?
+                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal4}") Если потребуется сбор средств для восстановления нашей страны и родных домов, оставшихся разбитыми от российских ракет мы обязательно поможем. Пока не можем дать стопроцентный ответ на этот вопрос, но обязательно сделаем все возможное!
                     .sixth__wrapper-faq-list-item-btn(type="button" @click="clickOnButton4" :class="{'active' : modal4}")
         .sixth__wrapper-soul(id="contacts")
             .sixth__wrapper-soul-head 
-                h2.sixth__wrapper-soul-head-title Команда, яка вкладає  всю душу в свою  справу
+                h2.sixth__wrapper-soul-head-title Команда, вкладывающая всю душу в свое дело
                 .sixth__wrapper-soul-head-info 
-                    p.sixth__wrapper-soul-head-info-text Кожен з нас допомагає чим може: збір коштів, розвезення гуманітарної допомоги, надання ліків та їжі...
-                    a(href="#forms").sixth__wrapper-soul-head-info-link Долучитись до команди
+                    p.sixth__wrapper-soul-head-info-text Каждый из нас помогает чем может: сбор средств, развоз гуманитарной помощи, предоставление лекарств и пищи...
+                    a(href="#forms").sixth__wrapper-soul-head-info-link Присоединиться к команде
             .sixth__wrapper-soul-slider 
                 ul.sixth__wrapper-soul-slider-list
                     li.sixth__wrapper-soul-slider-list-item
                         img(src="~/assets/img/slider1.png", alt="Волонтер").sixth__wrapper-soul-slider-list-item-img
                         p.sixth__wrapper-soul-slider-list-item-name Світлана Карацюба
-                        p.sixth__wrapper-soul-slider-list-item-text Збір коштів, допомагає в Києві
+                        p.sixth__wrapper-soul-slider-list-item-text Сбор средств, помогает в Киеве
                     li.sixth__wrapper-soul-slider-list-item
                         img(src="~/assets/img/slider2.png", alt="Волонтер").sixth__wrapper-soul-slider-list-item-img
                         p.sixth__wrapper-soul-slider-list-item-name Підковка Таня
-                        p.sixth__wrapper-soul-slider-list-item-text Розповсюдження інформації
+                        p.sixth__wrapper-soul-slider-list-item-text Распространение информации
                     li.sixth__wrapper-soul-slider-list-item
                         img(src="~/assets/img/slider3.png", alt="Волонтер").sixth__wrapper-soul-slider-list-item-img
                         p.sixth__wrapper-soul-slider-list-item-name Вофсі Павло
-                        p.sixth__wrapper-soul-slider-list-item-text Передача гуманітарної допомоги, допомагає в Києві
+                        p.sixth__wrapper-soul-slider-list-item-text Передача гуманитарной помощи, помогает в Киеве
                     li.sixth__wrapper-soul-slider-list-item
                         img(src="~/assets/img/slider4.png", alt="Волонтер").sixth__wrapper-soul-slider-list-item-img
                         p.sixth__wrapper-soul-slider-list-item-name Ніно Басілая
-                        p.sixth__wrapper-soul-slider-list-item-text Розповсюдження інформації
+                        p.sixth__wrapper-soul-slider-list-item-text Распространение информации
                     li.sixth__wrapper-soul-slider-list-item
                         img(src="~/assets/img/slider5.png", alt="Волонтер").sixth__wrapper-soul-slider-list-item-img
                         p.sixth__wrapper-soul-slider-list-item-name Шляхта Віка
-                        p.sixth__wrapper-soul-slider-list-item-text Розповсюдження інформації
+                        p.sixth__wrapper-soul-slider-list-item-text Распространение информации
                     li.sixth__wrapper-soul-slider-list-item
                         img(src="~/assets/img/slider6.png", alt="Волонтер").sixth__wrapper-soul-slider-list-item-img
                         p.sixth__wrapper-soul-slider-list-item-name Богдан
-                        p.sixth__wrapper-soul-slider-list-item-text Передача гуманітарної допомоги, допомагає в Ніжині
+                        p.sixth__wrapper-soul-slider-list-item-text Передача гуманитарной помощи, помогает в Нежине
             .sixth__wrapper-soul-contacts 
                 ul.sixth__wrapper-soul-contacts-list 
                     li.sixth__wrapper-soul-contacts-list-item 
@@ -108,6 +108,56 @@ section.sixth(id="faq")
                         .sixth__wrapper-soul-contacts-list-item-socials
                             a(href="https://t.me/Darkness_Flame").sixth__wrapper-soul-contacts-list-item-socials-link
                                 img(src="~/assets/img/tg.svg", alt="Телеграм").sixth__wrapper-soul-contacts-list-item-socials-link-img-solo
+            //- .sixth__wrapper-soul-contacts 
+            //-     ul.sixth__wrapper-soul-contacts-list 
+            //-         li.sixth__wrapper-soul-contacts-list-item 
+            //-             span.sixth__wrapper-soul-contacts-list-item-numb 01 
+            //-             .sixth__wrapper-soul-contacts-list-item-wrap
+            //-                 p.sixth__wrapper-soul-contacts-list-item-wrap-name Світлана Карацюба
+            //-                 a(href="tel:+380 (50) 168-65-01").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (50) 168-65-01
+            //-             .sixth__wrapper-soul-contacts-list-item-socials
+            //-                 a(href="#").sixth__wrapper-soul-contacts-list-item-socials-link
+            //-                     img(src="~/assets/img/inst.svg", alt="Інстаграм").sixth__wrapper-soul-contacts-list-item-socials-link-img
+            //-                 a(href="#").sixth__wrapper-soul-contacts-list-item-socials-link
+            //-                     img(src="~/assets/img/tg.svg", alt="Телеграм").sixth__wrapper-soul-contacts-list-item-socials-img
+            //-         li.sixth__wrapper-soul-contacts-list-item 
+            //-             span.sixth__wrapper-soul-contacts-list-item-numb 02
+            //-             .sixth__wrapper-soul-contacts-list-item-wrap
+            //-                 p.sixth__wrapper-soul-contacts-list-item-wrap-name Підковка Таня
+            //-                 a(href="tel:+380 (63) 446-60-47").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (63) 446-60-47
+            //-             .sixth__wrapper-soul-contacts-list-item-socials
+            //-                 a(href="#").sixth__wrapper-soul-contacts-list-item-socials-link
+            //-                     img(src="~/assets/img/inst.svg", alt="Інстаграм").sixth__wrapper-soul-contacts-list-item-socials-link-img
+            //-                 a(href="#").sixth__wrapper-soul-contacts-list-item-socials-link
+            //-                     img(src="~/assets/img/tg.svg", alt="Телеграм").sixth__wrapper-soul-contacts-list-item-socials-img
+            //-         li.sixth__wrapper-soul-contacts-list-item 
+            //-             span.sixth__wrapper-soul-contacts-list-item-numb 03
+            //-             .sixth__wrapper-soul-contacts-list-item-wrap
+            //-                 p.sixth__wrapper-soul-contacts-list-item-wrap-name Вофсі Павло
+            //-                 a(href="tel:+380 (99) 172-10-26").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (99) 172-10-26
+            //-             .sixth__wrapper-soul-contacts-list-item-socials
+            //-                 a(href="#").sixth__wrapper-soul-contacts-list-item-socials-link
+            //-                     img(src="~/assets/img/inst.svg", alt="Інстаграм").sixth__wrapper-soul-contacts-list-item-socials-link-img
+            //-                 a(href="#").sixth__wrapper-soul-contacts-list-item-socials-link
+            //-                     img(src="~/assets/img/tg.svg", alt="Телеграм").sixth__wrapper-soul-contacts-list-item-socials-img
+            //-         li.sixth__wrapper-soul-contacts-list-item 
+            //-             span.sixth__wrapper-soul-contacts-list-item-numb 04
+            //-             .sixth__wrapper-soul-contacts-list-item-wrap
+            //-                 p.sixth__wrapper-soul-contacts-list-item-wrap-name Шляхта Віка
+            //-                 a(href="tel:+380 (63) 601-01-21").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (63) 601-01-21
+            //-             .sixth__wrapper-soul-contacts-list-item-socials
+            //-                 a(href="#").sixth__wrapper-soul-contacts-list-item-socials-link
+            //-                     img(src="~/assets/img/inst.svg", alt="Інстаграм").sixth__wrapper-soul-contacts-list-item-socials-link-img
+            //-                 a(href="#").sixth__wrapper-soul-contacts-list-item-socials-link
+            //-                     img(src="~/assets/img/tg.svg", alt="Телеграм").sixth__wrapper-soul-contacts-list-item-socials-img
+            //-         li.sixth__wrapper-soul-contacts-list-item 
+            //-             span.sixth__wrapper-soul-contacts-list-item-numb 05
+            //-             .sixth__wrapper-soul-contacts-list-item-wrap
+            //-                 p.sixth__wrapper-soul-contacts-list-item-wrap-name Богдан
+            //-                 a(href="tel:+380 (93) 466-19-65").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (93) 466-19-65
+            //-             .sixth__wrapper-soul-contacts-list-item-socials
+            //-                 a(href="#").sixth__wrapper-soul-contacts-list-item-socials-link
+            //-                     img(src="~/assets/img/tg.svg", alt="Телеграм").sixth__wrapper-soul-contacts-list-item-socials-link-img-solo
                                 
 
         
@@ -136,21 +186,14 @@ export default {
             clickOnButton1() { 
                 this.modal1 = ! this.modal1
             },
-            // clickOnButton2() {
-            //    this.modal2 = ! this.modal2
-            // },
+            clickOnButton2() {
+               this.modal2 = ! this.modal2
+            },
             clickOnButton3() {
               this.modal3 = ! this.modal3
             },
             clickOnButton4() {
               this.modal4 = ! this.modal4
-            },
-            clickOnButton2() {
-                if (this.modal2) {
-                    this.modal2 = false;
-                } else {
-                    this.modal2 = true;
-                }
             }
         },
 }
@@ -206,6 +249,12 @@ export default {
                             }
                             &-text {
                                 display: none;
+                                &-link{
+                                    color: #F9224B;
+                                    &.hover {
+                                        text-decoration: none;
+                                    }
+                                }
 
                                 &.active {
                                     display: block;

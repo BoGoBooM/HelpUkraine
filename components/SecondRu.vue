@@ -1,16 +1,16 @@
 <template lang="pug">
 section.team(id="about") 
     .team__wrapper
-        h2.team__wrapper-title Команда студентів, які згуртувались, щоб <br> допомогти своїй країні
+        h2.team__wrapper-title Команда студентов, которые объединились, чтобы помочь своей стране.
         .team__wrapper-page 
             img(src="~/assets/img/photo1.png" alt="Гуманітарна допомога").team__wrapper-page-img
             .team__wrapper-page-info
                 .team__wrapper-page-info-wrap
-                    p.team__wrapper-page-info-wrap-text.left Нашою ціллю стала допомога армії, територіальній обороні, звичайним людям та дітям. Ми намагаємось забезпечити цих людей необхідними речами: амуніцією, їжею, засобами особистої гігієни, ліками та іншим. Команда проводить збори своїми силами, закуповуємо необхідні речі, та доставляємо їх особисто в руки.
-                    p.team__wrapper-page-info-wrap-text.bottom Кожен із вас може зробити цей внесок та врятувати чиєсь життя. Всього за один клік ви можете допомогти фінансово, та надіслати бронежилет війсковому, який не спить ночами та захищає український народ від загарбників.
+                    p.team__wrapper-page-info-wrap-text.left Нашей целью стала помощь армии, территориальной обороне, обычным людям и детям. Мы стараемся обеспечить этих людей необходимыми вещами: амуницией, едой, средствами личной гигиены, лекарствами и прочим. Команда проводит собрание своими силами, закупаем необходимые вещи и доставляем их лично в руки.
+                    p.team__wrapper-page-info-wrap-text.bottom Каждый из вас может внести этот вклад и спасти жизнь. Всего в один клик вы можете помочь финансово, и прислать бронежилет военному, который не спит ночами и защищает украинский народ от захватчиков.
                 .team__wrapper-page-info-paragraph
                     .team__wrapper-page-info-paragraph-mark
-                    p.team__wrapper-page-info-paragraph-text  Варто зазначити, що нам, як студентам, тяжко забезпечити всі фінансові витрати. <br> Тому для нас важлива ваша підтримка. Всі звіти про витрати можна отримати в <a href="#" class="team__wrapper-page-info-paragraph-text-link" >Telegram</a> та <a href="#" class="team__wrapper-page-info-paragraph-text-link">Instagram</a> 
+                    p.team__wrapper-page-info-paragraph-text Стоит отметить, что нам как студентам тяжело обеспечить все финансовые расходы. <br> Поэтому для нас важна ваша поддержка. Все отчеты о расходах можно получить в <a href="#" class="team__wrapper-page-info-paragraph-text-link" >Telegram</a> и <a href="#" class="team__wrapper-page-info-paragraph-text-link">Instagram</a>
         .team__wrapper-photos
             img(src="~/assets/img/photo2.png" alt="Гуманітарна допомога").team__wrapper-photos-img
             img(src="~/assets/img/photo3.png" alt="Гуманітарна допомога").team__wrapper-photos-img
@@ -32,6 +32,8 @@ export default {
         padding: 150px 0;
         display: flex;
         justify-content: center;
+        max-width: 1165px;
+        margin: 0 auto;
         &__wrapper {
             padding-left: 64px;
             &-title {
@@ -213,6 +215,9 @@ export default {
                                 top: 0;
                                 left: 0;
                             }
+                        }
+                        &-head {
+                            max-width: 331px;
                         }
                     }
 

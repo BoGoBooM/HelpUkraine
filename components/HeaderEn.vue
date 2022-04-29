@@ -5,27 +5,27 @@ header.header
         img(src="~/assets/img/logo.svg" alt="Логотип").logo
       ul.header__bar-list
         li.header__bar-list-item
-          a(href="#about").header__bar-list-item-link Про нас
+          a(href="#about").header__bar-list-item-link About us
         li.header__bar-list-item
-          a(href="#charity").header__bar-list-item-link Благодійність
+          a(href="#charity").header__bar-list-item-link Charity
         li.header__bar-list-item
-          a(href="#forms").header__bar-list-item-link Інша допомога
+          a(href="#forms").header__bar-list-item-link Other assistance
         li.header__bar-list-item
-          a(href="#report").header__bar-list-item-link Звітність
+          a(href="#report").header__bar-list-item-link Reporting
         li.header__bar-list-item
           a(href="#faq").header__bar-list-item-link FAQ
         li.header__bar-list-item
-          a(href="#contacts").header__bar-list-item-link Контакти
+          a(href="#contacts").header__bar-list-item-link Contacts
       .header__bar-menu
         a(href="#").header__bar-menu-button
           img(src="~/assets/img/crest.svg", alt=" Герб України").header__bar-menu-button-img
-          span.header__bar-menu-button-text Підтримати ЗСУ  
+          span.header__bar-menu-button-text Support the Armed Forces of Ukraine(AFU)  
         a(type="button" @click="clickOnButton1").header__bar-menu-lang
           button.header__bar-menu-lang-btn(:class="{'active' : lang}")
-            span.header__bar-menu-lang-btn-text UA
+            span.header__bar-menu-lang-btn-text EN
             .header__bar-menu-lang-btn-select(:class="{'active' : lang}")
-              nuxt-link( to="/pageRu").header__bar-menu-lang-btn-select-ru RU
-              nuxt-link(to="pageEn").header__bar-menu-lang-btn-select-en EN
+              nuxt-link(to="/").header__bar-menu-lang-btn-select-ru UA
+              nuxt-link(to="/pageRu").header__bar-menu-lang-btn-select-en RU
       .header__bar-tablet
         button( type="button" @click="clickOnButton").header__bar-tablet-btn 
           img(src="~/assets/img/menu.svg" alt="Меню").header__bar-tablet-btn-img
@@ -33,31 +33,31 @@ header.header
       .header__sideBar-wrapper 
         ul.header__sideBar-wrapper-list
           li.header__sideBar-wrapper-list-item
-            p.header__sideBar-wrapper-list-item-nav Навигація
+            p.header__sideBar-wrapper-list-item-nav Menu:
             .header__sideBar-wrapper-list-item-btn(type="button" @click="clickOnButton") 
           li.header__sideBar-wrapper-list-item
-            a(href="#about").header__sideBar-wrapper-list-item-link  Про нас
+            a(href="#about").header__sideBar-wrapper-list-item-link  About us
           li.header__sideBar-wrapper-list-item
-            a(href="#charity").header__sideBar-wrapper-list-item-link  Благодійність
+            a(href="#charity").header__sideBar-wrapper-list-item-link  Charity
           li.header__sideBar-wrapper-list-item
-            a(href="#forms").header__sideBar-wrapper-list-item-link  Інша допомога
+            a(href="#forms").header__sideBar-wrapper-list-item-link  Other assistance
           li.header__sideBar-wrapper-list-item
-            a(href="#report").header__sideBar-wrapper-list-item-link  Звітність
+            a(href="#report").header__sideBar-wrapper-list-item-link  Reporting
           li.header__sideBar-wrapper-list-item
             a(href="#faq").header__sideBar-wrapper-list-item-link  FAQ
           li.header__sideBar-wrapper-list-item
-            a(href="#contacts").header__sideBar-wrapper-list-item-link  Контакти
+            a(href="#contacts").header__sideBar-wrapper-list-item-link  Contacts
         .header__sideBar-last
           .header__sideBar-last-wrapper( type="button" @click="clickOnButton1")
-            a(href="#").header__sideBar-last-wrapper-lang(:class="{'active' : lang}") Мова UA
+            a(href="#").header__sideBar-last-wrapper-lang(:class="{'active' : lang}") Language EN
               .header__sideBar-last-wrapper-lang-img(:class="{'active' : lang}")
             .header__sideBar-last-wrap(:class="{'active' : lang}")
-              nuxt-link(to="/pageEn").header__sideBar-last-wrap-lang Language EN
-              nuxt-link(to="pageRu").header__sideBar-last-wrap-lang Язык RU
+              nuxt-link(to="/").header__sideBar-last-wrap-lang Мова UA
+              nuxt-link(to="/pageRu").header__sideBar-last-wrap-lang Язык RU
         .header__sideBar-button 
           a(href="#").header__sideBar-button-link
             img(src="~/assets/img/crest.svg", alt=" Герб України").header__sideBar-button-link-img
-            span.header__sideBar-button-link-text Підтримати ЗСУ
+            span.header__sideBar-button-link-text Support the Armed Forces of Ukraine(AFU)
 
 
 
@@ -125,6 +125,9 @@ export default {
 
   &__sideBar {
     display: none;
+    &-wrapper {
+      position: relative;
+    }
   }
   &__bar {
     display: flex;
@@ -156,7 +159,7 @@ export default {
     }
 
     &-logo {
-      margin-right: 75px;
+      margin-right: 30px;
     }
 
     &-list {
@@ -184,6 +187,7 @@ export default {
       border-radius: 5px ;
       margin-right: 40px;
       border: 1px solid #000;
+      max-width: 310px;
       
 
         &-img {
@@ -211,7 +215,7 @@ export default {
         justify-content: center;
 
         &-btn {
-          background: url("../assets/img/arrLangOp.svg") no-repeat 100% 50%;
+          background: url("../assets/img/arrLangOp.svg") no-repeat 100% 68%;
           border: none;
           color: #fff;
           
@@ -219,11 +223,11 @@ export default {
 
           &:hover {
             color: #F9224B;
-            background: url("../assets/img/arrLangCl.svg") no-repeat 100% 50%;
+            background: url("../assets/img/arrLangCl.svg") no-repeat 100% 68%;
             }
           &.active {
             color: #F9224B;
-            background: url("../assets/img/arrLangCl.svg") no-repeat 70% 50%;
+            background: url("../assets/img/arrLangCl.svg") no-repeat 76% 68%;
           }
             &-select {
               display: none;
@@ -330,7 +334,7 @@ export default {
     &-wrapper {
       margin: 16px 0;
       &-lang {
-        display: none;
+        display: flex;
         justify-content: space-between;
         margin-bottom: 16px;
         align-items: center;
@@ -366,6 +370,9 @@ export default {
     }
   }
   &-button {
+    position: absolute;
+    top: 150%;
+    left: 10%;
     display: none;
     align-items: center;
     background: #F9224B;
@@ -374,8 +381,9 @@ export default {
     border-radius: 5px ;
     border: 1px solid #000;
     max-width: 88%;
+    width: 80%;
     margin: auto;
-    margin-top: 200px;
+    // margin-top: 200px;
     &-link {
       display: none;
       margin: auto;
@@ -486,7 +494,8 @@ export default {
       display: block;
       max-width: 80%;
       margin: auto;
-      margin-top: 200px;
+      left: 10%;
+      top: 145%;
       &-link {
         display: flex;
         justify-content: center;

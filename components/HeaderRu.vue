@@ -5,27 +5,27 @@ header.header
         img(src="~/assets/img/logo.svg" alt="Логотип").logo
       ul.header__bar-list
         li.header__bar-list-item
-          a(href="#about").header__bar-list-item-link Про нас
+          a(href="#about").header__bar-list-item-link О нас
         li.header__bar-list-item
-          a(href="#charity").header__bar-list-item-link Благодійність
+          a(href="#charity").header__bar-list-item-link Благотворитльность
         li.header__bar-list-item
-          a(href="#forms").header__bar-list-item-link Інша допомога
+          a(href="#forms").header__bar-list-item-link Другая помощь
         li.header__bar-list-item
-          a(href="#report").header__bar-list-item-link Звітність
+          a(href="#report").header__bar-list-item-link Отчётность
         li.header__bar-list-item
           a(href="#faq").header__bar-list-item-link FAQ
         li.header__bar-list-item
-          a(href="#contacts").header__bar-list-item-link Контакти
+          a(href="#contacts").header__bar-list-item-link Контакты
       .header__bar-menu
         a(href="#").header__bar-menu-button
           img(src="~/assets/img/crest.svg", alt=" Герб України").header__bar-menu-button-img
-          span.header__bar-menu-button-text Підтримати ЗСУ  
+          span.header__bar-menu-button-text Пожертвовать для ВСУ  
         a(type="button" @click="clickOnButton1").header__bar-menu-lang
           button.header__bar-menu-lang-btn(:class="{'active' : lang}")
-            span.header__bar-menu-lang-btn-text UA
+            span.header__bar-menu-lang-btn-text RU
             .header__bar-menu-lang-btn-select(:class="{'active' : lang}")
-              nuxt-link( to="/pageRu").header__bar-menu-lang-btn-select-ru RU
-              nuxt-link(to="pageEn").header__bar-menu-lang-btn-select-en EN
+              nuxt-link(to="/").header__bar-menu-lang-btn-select-ru UA
+              nuxt-link(to="/pageEn").header__bar-menu-lang-btn-select-en EN
       .header__bar-tablet
         button( type="button" @click="clickOnButton").header__bar-tablet-btn 
           img(src="~/assets/img/menu.svg" alt="Меню").header__bar-tablet-btn-img
@@ -33,31 +33,31 @@ header.header
       .header__sideBar-wrapper 
         ul.header__sideBar-wrapper-list
           li.header__sideBar-wrapper-list-item
-            p.header__sideBar-wrapper-list-item-nav Навигація
+            p.header__sideBar-wrapper-list-item-nav Меню
             .header__sideBar-wrapper-list-item-btn(type="button" @click="clickOnButton") 
           li.header__sideBar-wrapper-list-item
-            a(href="#about").header__sideBar-wrapper-list-item-link  Про нас
+            a(href="#about").header__sideBar-wrapper-list-item-link  О нас
           li.header__sideBar-wrapper-list-item
-            a(href="#charity").header__sideBar-wrapper-list-item-link  Благодійність
+            a(href="#charity").header__sideBar-wrapper-list-item-link  Благотворительность
           li.header__sideBar-wrapper-list-item
-            a(href="#forms").header__sideBar-wrapper-list-item-link  Інша допомога
+            a(href="#forms").header__sideBar-wrapper-list-item-link  Другая помощь
           li.header__sideBar-wrapper-list-item
-            a(href="#report").header__sideBar-wrapper-list-item-link  Звітність
+            a(href="#report").header__sideBar-wrapper-list-item-link  Отчётность
           li.header__sideBar-wrapper-list-item
             a(href="#faq").header__sideBar-wrapper-list-item-link  FAQ
           li.header__sideBar-wrapper-list-item
-            a(href="#contacts").header__sideBar-wrapper-list-item-link  Контакти
+            a(href="#contacts").header__sideBar-wrapper-list-item-link  Контакты
         .header__sideBar-last
           .header__sideBar-last-wrapper( type="button" @click="clickOnButton1")
-            a(href="#").header__sideBar-last-wrapper-lang(:class="{'active' : lang}") Мова UA
+            a(href="#").header__sideBar-last-wrapper-lang(:class="{'active' : lang}") Язык RU 
               .header__sideBar-last-wrapper-lang-img(:class="{'active' : lang}")
             .header__sideBar-last-wrap(:class="{'active' : lang}")
+              nuxt-link(to="/").header__sideBar-last-wrap-lang Мова UA
               nuxt-link(to="/pageEn").header__sideBar-last-wrap-lang Language EN
-              nuxt-link(to="pageRu").header__sideBar-last-wrap-lang Язык RU
         .header__sideBar-button 
           a(href="#").header__sideBar-button-link
             img(src="~/assets/img/crest.svg", alt=" Герб України").header__sideBar-button-link-img
-            span.header__sideBar-button-link-text Підтримати ЗСУ
+            span.header__sideBar-button-link-text Пожертвовать для ВСУ
 
 
 
@@ -156,12 +156,11 @@ export default {
     }
 
     &-logo {
-      margin-right: 75px;
+      margin-right: 30px;
     }
 
     &-list {
       display: flex;
-      margin-right: 60px;
 
         &-item {
           margin-right: 40px;
