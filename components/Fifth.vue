@@ -8,13 +8,13 @@ section.fifth(id="forms")
             li.fifth__wrapper-list-item 
                 button(type="button" @click="clickOnButton" ).fifth__wrapper-list-item-btn(:class="{'active' : modal}") Потребую допомоги
         .fifth__wrapper-wrap(:class="{'active' : modal}" )
-            form(action="~/components/telegramUaNeed.php" method="post").fifth__wrapper-wrap-form
+            form(action="telegramUaNeed.php" method="POST").fifth__wrapper-wrap-form
                 input(type="text" placeholder="Ваше ім’я" name="user_name" required).fifth__wrapper-wrap-form-name
                 .fifth__wrapper-wrap-form-menu
                     a.fifth__wrapper-wrap-form-menu-contry
                         img(src="~/assets/img/Ua.svg" alt="Номер країни").fifth__wrapper-wrap-form-menu-contry-img
                         //- img(src="~/assets/img/arrNumb.svg" alt="").fifth__wrapper-wrap-form-menu-contry-arrow
-                    input(type="tel" placeholder="+380 (99) 999-99-99" name="user_phone" required).fifth__wrapper-wrap-form-menu-phone
+                    input(type="tel" placeholder="+380 (99) 999-99-99"  name="user_phone" required).fifth__wrapper-wrap-form-menu-phone
                 input(type="text" placeholder="Ваше місто" name="user_locate" required).fifth__wrapper-wrap-form-city
                 input(type="text" placeholder="Чим вам потрібно допомогти?" name="user_need" ).fifth__wrapper-wrap-form-help
                 .fifth__wrapper-wrap-form-submit 
@@ -25,7 +25,7 @@ section.fifth(id="forms")
                 p.fifth__wrapper-wrap-info-text Ви обов’язково будете почуті, адже, тільки, допомогая один одному, ми переможемо ворога!
                 img(src="~/assets/img/photo6.png" alt="Допомога постраждалим").fifth__wrapper-wrap-info-img
         .fifth__wrapper-wrap(:class="{'active' : ! modal}" )
-            form(action="~/components/telegramUaCan.php").fifth__wrapper-wrap-form
+            form(action="telegramUaCan.php" method="POST").fifth__wrapper-wrap-form
                 input(type="text" placeholder="Ваше ім’я" name="user_name" required).fifth__wrapper-wrap-form-name
                 .fifth__wrapper-wrap-form-menu
                     a.fifth__wrapper-wrap-form-menu-contry
@@ -150,15 +150,17 @@ export default {
                     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
                     height: 52px;
                     width: 528px;
+                    position: relative;
                     &-contry {
                         display: flex;
                         align-items: center;
-                        margin-left: 15px;
                         cursor: pointer;
+                        z-index: 1;
                         &-img {
                             margin-right: 2px;
-                            width: 100%;
                             height: 18px;
+                            left: 15px;
+                            position: absolute;
                         }
                         &-arrow {
                             width: 40%;
@@ -167,7 +169,7 @@ export default {
                     }
                     
                     &-phone {
-                    width: 468px;
+                    width: 528px;
                     height: 52px;
                     border: none;
                     background: none;
@@ -175,6 +177,7 @@ export default {
                     color: #fff;
                     padding-left: 15px;
                     font-size: 16px;
+                    padding-left: 55px;
                     
                     &::placeholder { 
                         color: #fff;
@@ -340,20 +343,23 @@ export default {
                 }
                 &-menu {
                     max-width: 328px;
+                    margin-bottom: 20px;
                     &-contry {
                         max-width: 328px;
                         margin: auto;
                         margin-bottom: 20px;
 
                         &-img {
-                            margin-left: 16px;
+                            right: 135px;
+                            top: 17px;
                         }
                     }
                     
                     &-phone {
                         max-width: 328px;
                         margin: auto;
-                        text-align: center;
+                        padding-left: 55px;
+
                     }
                 }
                 

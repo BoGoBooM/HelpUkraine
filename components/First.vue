@@ -8,7 +8,7 @@ section.charity
         h1.charity__wrapper-title На потреби Збройних Сил України та тим, хто постраждав внаслідок війни
         .charity__wrapper-content
             .charity__wrapper-content-wrapper
-                a(href="#").charity__wrapper-content-wrapper-btn Підтримати
+                a(href="https://pay.fondy.eu/s/rmku6cmMDPG8h4CA").charity__wrapper-content-wrapper-btn Підтримати
                 p.charity__wrapper-content-wrapper-text Допоможи українській армії та всім потребуючим.<br> Твоя допомога може стати вирішальною для життя людини
             
         .charity__wrapper-donations
@@ -28,44 +28,13 @@ section.charity
                 li.charity__wrapper-donations-list-item.time
                     .charity__wrapper-donations-list-item-timer 
                         .charity__wrapper-donations-list-item-timer-time 24.02.2022 04:00
-                        .charity__wrapper-donations-list-item-timer-text Час початку війни України проти Росії
+                        .charity__wrapper-donations-list-item-timer-text почалася повномасштабна війна в Україні проти Росії
 
 
 </template>
 
 <script>
-// new Vue({
-//     el: '#timer',
-//     data: {
-//         time: " "
-//     },
-//     methods: {
-//         setInterval: function () {
-//             var startWar = Date.parse('2022-02-24T04:00:00');
-//             return startWar;
-//             var justNow = new Date();
-//             return justNow;
-//             let passed = justNow.getTime() - startWar;
-//             return passed;
-//             let passedDay = Math.floor(passed/(1000*60*60*24));
-//             return passedDay;
-//             let passedHours = Math.floor((passed - passedDay * (1000*60*60*24))/(1000*60*60));
-//             console.log(passedHours);
-//             let passedMinute = Math.floor((passed - passedDay * (1000*60*60*24) - passedHours * (1000*60*60))/(1000*60));
-//             console.log(passedMinute); 
-//             let passedSeconds = Math.floor((passed - passedDay * (1000*60*60*24) - passedHours * (1000*60*60) - passedMinute * (1000*60))/1000);
-//             console.log(passedSeconds);
-
-//         }
-//     }
-// })
 export default {
-//   data: () => ({
-//             displayDays: 59,
-//             displayHours: 22,
-//             displayMinutes: 10,
-//             displaySeconds: 00
-//         })
 }
 </script>
 

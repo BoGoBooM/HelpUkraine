@@ -8,19 +8,19 @@ section.third(id="charity")
                 li.third__wrapper-grown-list-item
                     span.third__wrapper-grown-list-item-numb 01
                     p.third__wrapper-grown-list-item-text Fundraising for the Ukrainian army
-                    a(href="#").third__wrapper-grown-list-item-link 
+                    a(href="https://pay.fondy.eu/s/rmku6cmMDPG8h4CA").third__wrapper-grown-list-item-link 
                         button.third__wrapper-grown-list-item-link-btn 
                         button.third__wrapper-grown-list-item-link-btn-tablet Support
                 li.third__wrapper-grown-list-item
                     span.third__wrapper-grown-list-item-numb 02
                     p.third__wrapper-grown-list-item-text Fundraising for medicines 
-                    a(href="#").third__wrapper-grown-list-item-link 
+                    a(href="https://pay.fondy.eu/s/rmku6cmMDPG8h4CA").third__wrapper-grown-list-item-link 
                         button.third__wrapper-grown-list-item-link-btn
                         button.third__wrapper-grown-list-item-link-btn-tablet Support
-                li.third__wrapper-grown-list-item
+                li.third__wrapper-grown-list-item(id="rep")
                     span.third__wrapper-grown-list-item-numb 03
                     p.third__wrapper-grown-list-item-text Collection  of funds for food in areas of humanitarian catastrophe
-                    a(href="#").third__wrapper-grown-list-item-link 
+                    a(href="https://pay.fondy.eu/s/rmku6cmMDPG8h4CA").third__wrapper-grown-list-item-link 
                         button.third__wrapper-grown-list-item-link-btn
                         button.third__wrapper-grown-list-item-link-btn-tablet Support
         .third__wrapper-expens

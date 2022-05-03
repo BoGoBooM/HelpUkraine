@@ -8,19 +8,19 @@ section.third(id="charity")
                 li.third__wrapper-grown-list-item
                     span.third__wrapper-grown-list-item-numb 01
                     p.third__wrapper-grown-list-item-text Збір коштів на потреби армії
-                    a(href="#").third__wrapper-grown-list-item-link 
+                    a(href="https://pay.fondy.eu/s/rmku6cmMDPG8h4CA").third__wrapper-grown-list-item-link 
                         button.third__wrapper-grown-list-item-link-btn 
                         button.third__wrapper-grown-list-item-link-btn-tablet Підтримати
                 li.third__wrapper-grown-list-item
                     span.third__wrapper-grown-list-item-numb 02
                     p.third__wrapper-grown-list-item-text Збір коштів на медикаменти 
-                    a(href="#").third__wrapper-grown-list-item-link 
+                    a(href="https://pay.fondy.eu/s/rmku6cmMDPG8h4CA").third__wrapper-grown-list-item-link 
                         button.third__wrapper-grown-list-item-link-btn
                         button.third__wrapper-grown-list-item-link-btn-tablet Підтримати
-                li.third__wrapper-grown-list-item
+                li.third__wrapper-grown-list-item(id="rep")
                     span.third__wrapper-grown-list-item-numb 03
                     p.third__wrapper-grown-list-item-text Збір коштів на їжу в райони гуманітарної катастрофи
-                    a(href="#").third__wrapper-grown-list-item-link 
+                    a(href="https://pay.fondy.eu/s/rmku6cmMDPG8h4CA").third__wrapper-grown-list-item-link 
                         button.third__wrapper-grown-list-item-link-btn
                         button.third__wrapper-grown-list-item-link-btn-tablet Підтримати
         .third__wrapper-expens
@@ -52,28 +52,6 @@ section.third(id="charity")
 <script>
 
 export default {
-  
-
-
-// data() {
-//             return { showButton: true };
-//         },
-//         onClick() {
-//              this.$refs.video.play()
-//         },
-
-
-//         onPlay() {
-//         if (this.showButton) {
-//             this.$refs.video.play()
-//         } else {
-//             this.$refs.video.pause()
-//         }
-//         this.showButton = !this.showButton;
-//         }   
-
-
-
 
 }
 </script>

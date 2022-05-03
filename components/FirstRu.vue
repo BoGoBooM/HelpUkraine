@@ -8,7 +8,7 @@ section.charity
         h1.charity__wrapper-title На нужды Вооруженных Сил Украины и пострадавших в результате войны
         .charity__wrapper-content
             .charity__wrapper-content-wrapper
-                a(href="#").charity__wrapper-content-wrapper-btn Пожертвовать
+                a(href="https://pay.fondy.eu/s/rmku6cmMDPG8h4CA").charity__wrapper-content-wrapper-btn Пожертвовать
                 p.charity__wrapper-content-wrapper-text Помоги украинской армии и всем нуждающимся.<br> Твоя помощь может стать решающей для жизни человека
             
         .charity__wrapper-donations
@@ -27,8 +27,8 @@ section.charity
                         p.charity__wrapper-donations-list-item-wrap-text Присоединились к нашей деятельности и <br> внесли свой вклад в победу Украины
                 li.charity__wrapper-donations-list-item.time
                     .charity__wrapper-donations-list-item-timer 
-                        .charity__wrapper-donations-list-item-timer-time 48 дней 17 часов 
-                        .charity__wrapper-donations-list-item-timer-text С начала войны в Украине против России
+                        .charity__wrapper-donations-list-item-timer-time 24.02.2022 04:00
+                        .charity__wrapper-donations-list-item-timer-text началась полномасштабная война в Украине против России
 
 
 </template>

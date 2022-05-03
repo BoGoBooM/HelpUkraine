@@ -123,6 +123,7 @@ export default {
                 margin-bottom: 21px;
                 max-width: 680px;
                 margin: auto;
+                margin-bottom: 21px;
                 &-img {
                     margin-right: 24px;
                     width: 240px;

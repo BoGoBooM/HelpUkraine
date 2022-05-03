@@ -136,22 +136,15 @@ export default {
             clickOnButton1() { 
                 this.modal1 = ! this.modal1
             },
-            // clickOnButton2() {
-            //    this.modal2 = ! this.modal2
-            // },
+            clickOnButton2() {
+               this.modal2 = ! this.modal2
+            },
             clickOnButton3() {
               this.modal3 = ! this.modal3
             },
             clickOnButton4() {
               this.modal4 = ! this.modal4
             },
-            clickOnButton2() {
-                if (this.modal2) {
-                    this.modal2 = false;
-                } else {
-                    this.modal2 = true;
-                }
-            }
         },
 }
 </script>

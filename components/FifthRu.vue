@@ -8,7 +8,7 @@ section.fifth(id="forms")
             li.fifth__wrapper-list-item 
                 button(type="button" @click="clickOnButton" ).fifth__wrapper-list-item-btn(:class="{'active' : modal}") Нуждаюсь в помощи
         .fifth__wrapper-wrap(:class="{'active' : modal}" )
-            form(action="~/components/telegramRuNeed.php" method="post").fifth__wrapper-wrap-form
+            form(action="telegramRuNeed.php" method="POST").fifth__wrapper-wrap-form
                 input(type="text" placeholder="Ваше имя" name="user_name" required).fifth__wrapper-wrap-form-name
                 .fifth__wrapper-wrap-form-menu
                     a.fifth__wrapper-wrap-form-menu-contry
@@ -25,7 +25,7 @@ section.fifth(id="forms")
                 p.fifth__wrapper-wrap-info-text Вы обязательно будете услышаны, ведь только, помогая друг другу, мы победим врага!
                 img(src="~/assets/img/photo6.png" alt="Допомога постраждалим").fifth__wrapper-wrap-info-img
         .fifth__wrapper-wrap(:class="{'active' : ! modal}" )
-            form(action="~/components/telegramRuCan.php").fifth__wrapper-wrap-form
+            form(action="telegramRuCan.php" method="POST").fifth__wrapper-wrap-form
                 input(type="text" placeholder="Ваше имя" name="user_name" required).fifth__wrapper-wrap-form-name
                 .fifth__wrapper-wrap-form-menu
                     a.fifth__wrapper-wrap-form-menu-contry
@@ -148,15 +148,16 @@ export default {
                     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
                     height: 52px;
                     width: 528px;
+                    position: relative;
                     &-contry {
                         display: flex;
                         align-items: center;
-                        margin-left: 15px;
                         cursor: pointer;
                         &-img {
                             margin-right: 2px;
-                            width: 100%;
                             height: 18px;
+                            position: absolute;
+                            left: 15px;
                         }
                         &-arrow {
                             width: 40%;
@@ -165,13 +166,13 @@ export default {
                     }
                     
                     &-phone {
-                    width: 468px;
+                    width: 528px;
                     height: 52px;
                     border: none;
                     background: none;
                     margin-bottom: 30px;
                     color: #fff;
-                    padding-left: 15px;
+                    padding-left: 55px;
                     font-size: 16px;
                     
                     &::placeholder { 
@@ -338,20 +339,22 @@ export default {
                 }
                 &-menu {
                     max-width: 328px;
+                    margin-bottom: 20px;
                     &-contry {
                         max-width: 328px;
                         margin: auto;
                         margin-bottom: 20px;
 
                         &-img {
-                            margin-left: 16px;
+                            right: 135px;
+                            top: 17px;
                         }
                     }
                     
                     &-phone {
                         max-width: 328px;
                         margin: auto;
-                        text-align: center;
+                        padding-left: 55px;
                     }
                 }
                 

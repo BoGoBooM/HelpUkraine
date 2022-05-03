@@ -16,10 +16,10 @@ section.fourth
                 li.fourth__wrapper-help-list-item
                     span.fourth__wrapper-help-list-item-numb 02
                     p.fourth__wrapper-help-list-item-text Закупка необхідної амуніції та  гуманітарної допомоги для  наших захисників та лікарень.
-                li.fourth__wrapper-help-list-item
+                li.fourth__wrapper-help-list-item(id="report")
                     span.fourth__wrapper-help-list-item-numb 03
-                    p.fourth__wrapper-help-list-item-text Все необхідне ми власноруч доставляємо та передаємо прямо в руки. Звітуємо про це на нашому <a class="fourth__wrapper-help-list-item-text-link" href="#numbers">сайті</a> та в соц мережах.
-        .fourth__wrapper-report(id="report")
+                    p.fourth__wrapper-help-list-item-text Все необхідне ми власноруч доставляємо та передаємо прямо в руки. Звітуємо про це на нашому <a class="fourth__wrapper-help-list-item-text-link" href="#rep">сайті</a> та в соц мережах.
+        .fourth__wrapper-report
             .fourth__wrapper-report-info 
                 h2.fourth__wrapper-report-info-title Звітність про виконану роботу
                 .fourth__wrapper-report-info-paragraph 
@@ -31,9 +31,9 @@ section.fourth
                         p.fourth__wrapper-report-info-paragraph-box-text Результати нашої праці та вашого внеску в оборону нашої держави ви можете бачити щодня на наших світлинах.
                         p.fourth__wrapper-report-info-paragraph-box-follow Слідкуй за нами в соцмережах:
                         .fourth__wrapper-report-info-paragraph-box-links
-                            a(href="#").fourth__wrapper-report-info-paragraph-box-links-link Instagram
+                            a(href="https://instagram.com/sveta.k_s?igshid=YmMyMTA2M2Y=").fourth__wrapper-report-info-paragraph-box-links-link Instagram
                                 img(src="~/assets/img/arrLink.svg" alt="Соціальна мережа").fourth__wrapper-report-info-paragraph-box-links-link-img
-                            a(href="#").fourth__wrapper-report-info-paragraph-box-links-link Telegram
+                            a(href="https://t.me/pomozchazov").fourth__wrapper-report-info-paragraph-box-links-link Telegram
                                 img(src="~/assets/img/arrLink.svg" alt="Соціальна мережа").fourth__wrapper-report-info-paragraph-box-links-link-img
             .fourth__wrapper-report-picture 
                 img(src="~/assets/img/iphone.png" alt="IPhone").fourth__wrapper-report-picture-img

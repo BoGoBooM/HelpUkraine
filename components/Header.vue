@@ -17,15 +17,15 @@ header.header
         li.header__bar-list-item
           a(href="#contacts").header__bar-list-item-link Контакти
       .header__bar-menu
-        a(href="#").header__bar-menu-button
+        a(href="https://pay.fondy.eu/s/rmku6cmMDPG8h4CA").header__bar-menu-button
           img(src="~/assets/img/crest.svg", alt=" Герб України").header__bar-menu-button-img
           span.header__bar-menu-button-text Підтримати ЗСУ  
         a(type="button" @click="clickOnButton1").header__bar-menu-lang
           button.header__bar-menu-lang-btn(:class="{'active' : lang}")
             span.header__bar-menu-lang-btn-text UA
             .header__bar-menu-lang-btn-select(:class="{'active' : lang}")
-              nuxt-link( to="/pageRu").header__bar-menu-lang-btn-select-ru RU
-              nuxt-link(to="pageEn").header__bar-menu-lang-btn-select-en EN
+              a(href="/pageRu").header__bar-menu-lang-btn-select-ru RU
+              a(href="pageEn").header__bar-menu-lang-btn-select-en EN
       .header__bar-tablet
         button( type="button" @click="clickOnButton").header__bar-tablet-btn 
           img(src="~/assets/img/menu.svg" alt="Меню").header__bar-tablet-btn-img
@@ -36,26 +36,32 @@ header.header
             p.header__sideBar-wrapper-list-item-nav Навигація
             .header__sideBar-wrapper-list-item-btn(type="button" @click="clickOnButton") 
           li.header__sideBar-wrapper-list-item
-            a(href="#about").header__sideBar-wrapper-list-item-link  Про нас
+            a(href="#about").header__sideBar-wrapper-list-item-link( type="button" @click="clickOnButton")  
+              p.header__sideBar-wrapper-list-item-link-text Про нас
           li.header__sideBar-wrapper-list-item
-            a(href="#charity").header__sideBar-wrapper-list-item-link  Благодійність
+            a(href="#charity").header__sideBar-wrapper-list-item-link( type="button" @click="clickOnButton")
+              p.header__sideBar-wrapper-list-item-link-text  Благодійність
           li.header__sideBar-wrapper-list-item
-            a(href="#forms").header__sideBar-wrapper-list-item-link  Інша допомога
+            a(href="#forms").header__sideBar-wrapper-list-item-link( type="button" @click="clickOnButton") 
+              p.header__sideBar-wrapper-list-item-link-text Інша допомога
           li.header__sideBar-wrapper-list-item
-            a(href="#report").header__sideBar-wrapper-list-item-link  Звітність
+            a(href="#report").header__sideBar-wrapper-list-item-link( type="button" @click="clickOnButton") 
+              p.header__sideBar-wrapper-list-item-link-text Звітність
           li.header__sideBar-wrapper-list-item
-            a(href="#faq").header__sideBar-wrapper-list-item-link  FAQ
+            a(href="#faq").header__sideBar-wrapper-list-item-link( type="button" @click="clickOnButton") 
+              p.header__sideBar-wrapper-list-item-link-text FAQ
           li.header__sideBar-wrapper-list-item
-            a(href="#contacts").header__sideBar-wrapper-list-item-link  Контакти
+            a(href="#contacts").header__sideBar-wrapper-list-item-link( type="button" @click="clickOnButton") 
+              p.header__sideBar-wrapper-list-item-link-text Контакти
         .header__sideBar-last
           .header__sideBar-last-wrapper( type="button" @click="clickOnButton1")
-            a(href="#").header__sideBar-last-wrapper-lang(:class="{'active' : lang}") Мова UA
+            a.header__sideBar-last-wrapper-lang(:class="{'active' : lang}") Мова UA
               .header__sideBar-last-wrapper-lang-img(:class="{'active' : lang}")
             .header__sideBar-last-wrap(:class="{'active' : lang}")
-              nuxt-link(to="/pageEn").header__sideBar-last-wrap-lang Language EN
-              nuxt-link(to="pageRu").header__sideBar-last-wrap-lang Язык RU
+              a(href="/pageEn").header__sideBar-last-wrap-lang Language EN
+              a(href="pageRu").header__sideBar-last-wrap-lang Язык RU
         .header__sideBar-button 
-          a(href="#").header__sideBar-button-link
+          a(href="https://pay.fondy.eu/s/rmku6cmMDPG8h4CA").header__sideBar-button-link
             img(src="~/assets/img/crest.svg", alt=" Герб України").header__sideBar-button-link-img
             span.header__sideBar-button-link-text Підтримати ЗСУ
 
@@ -85,26 +91,6 @@ export default {
               this.lang = ! this.lang
             }
         },
-    // data() {
-    //         return {
-    //             modal: false,
-                
-    //         }
-    //     },
-
-    //     mounted() {
-    //         console.log("Header");            
-    //     },
-
-    //     methods: {
-    //         clickOnButton() {
-    //            if (this.modal) {
-    //                 this.modal = false;
-    //            } else {
-    //                this.modal = true;
-    //            }
-    //         }
-    //     },
 }
 </script>
 
@@ -150,7 +136,14 @@ export default {
         background: none;
         margin-top: -1px;
         margin-left: -6px;
+        align-items: center;
+        justify-content: center;
+        &-img {
+          justify-content: center;
+          align-items: center;
+          display: flex;
         }
+      }
 
       
     }
@@ -253,7 +246,7 @@ export default {
 
 }
 .header__sideBar {
-  display: none;
+  display: block;
   width: 70vw;
   height: 100%;
   background: #101012;
@@ -268,16 +261,19 @@ export default {
     transition: .7s ease;
     }
     &-wrapper {
+      position: relative;
       &-list {
         &-item {
-          padding: 16px 0;
           border-bottom: 1px solid #3F3F3F;
-          padding-left: 32px;
           display: flex;
+          &-link {
+            width: 100%;
+            padding: 16px 0 16px 32px;
+          }
           &-nav {
            color: #F9224B;
            font-size: 20px;
-           margin-top: 24px;
+           margin: 40px 0 16px 32px;
           }
           &-btn {
             position: absolute;
@@ -330,7 +326,7 @@ export default {
     &-wrapper {
       margin: 16px 0;
       &-lang {
-        display: none;
+        display: flex;
         justify-content: space-between;
         margin-bottom: 16px;
         align-items: center;
@@ -376,6 +372,10 @@ export default {
     max-width: 88%;
     margin: auto;
     margin-top: 200px;
+    position: absolute;
+    width: 80%;
+    top: 400px;
+    left: 30px;
     &-link {
       display: none;
       margin: auto;

@@ -11,9 +11,9 @@ $token = "5322562951:AAENujJOUemepr4GmM_kVysjpiKGG0GQnEg";
 $chat_id = "-682543421";
 $arr = array(
      $name => ' Нуждается в помощи',
-    'Имя пользователя: ' => $name,
+    "Имя пользователя: " => $name,
     'Телефон: ' => $phone,
-    'Местонахождение:  ' => $locate,
+    'Местоположение:  ' => $locate,
     'Нуждаюсь в помощи: ' => $help
 );
 
@@ -24,8 +24,8 @@ foreach($arr as $key => $value) {
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 
 if ($sendToTelegram) {
-    echo "Спасибо за ваше обращение. Мы свяжемся с вами в ближайшее время";
+    header('location: ru.html');
 } else {
-    echo "Ошибка отправки"
+    echo "Error";
 }
 ?>

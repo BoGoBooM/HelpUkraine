@@ -185,7 +185,6 @@ export default {
         methods: {
             clickOnButton1() { 
                 this.modal1 = ! this.modal1
-               
             },
             clickOnButton2() {
                this.modal2 = ! this.modal2

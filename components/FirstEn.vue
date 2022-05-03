@@ -8,7 +8,7 @@ section.charity
         h1.charity__wrapper-title For the needs of the Armed Forces of Ukraine and those who suffered from the war
         .charity__wrapper-content
             .charity__wrapper-content-wrapper
-                a(href="#").charity__wrapper-content-wrapper-btn Support
+                a(href="https://pay.fondy.eu/s/rmku6cmMDPG8h4CA").charity__wrapper-content-wrapper-btn Support
                 p.charity__wrapper-content-wrapper-text Help the Ukrainian army and all those who need. Your help can be crucial to a person's life
             
         .charity__wrapper-donations
@@ -27,8 +27,8 @@ section.charity
                         p.charity__wrapper-donations-list-item-wrap-text joined our activities and contributed to the victory of Ukraine
                 li.charity__wrapper-donations-list-item.time
                     .charity__wrapper-donations-list-item-timer 
-                        .charity__wrapper-donations-list-item-timer-time 44 days 
-                        .charity__wrapper-donations-list-item-timer-text Since the beginning of the full-scale war in Ukraine against Russia
+                        .charity__wrapper-donations-list-item-timer-time 24.02.2022 04:00
+                        .charity__wrapper-donations-list-item-timer-text The beginning of a full-scale war in Ukraine against Russia
 
 
 </template>

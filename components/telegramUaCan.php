@@ -14,7 +14,7 @@ $arr = array(
     "Ім'я користувача: " => $name,
     'Телефон: ' => $phone,
     'Місцезнаходження:  ' => $locate,
-    'Потребую допомоги: ' => $help
+    'Пропоную допомогу: ' => $help
 );
 
 foreach($arr as $key => $value) {
@@ -24,8 +24,8 @@ foreach($arr as $key => $value) {
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 
 if ($sendToTelegram) {
-    echo "Дякуємо за ваше звернення. Ми зателефонуємо вам найближчим часом";
+    header('location: ua.html');
 } else {
-    echo "Помилка відправки"
+    echo "Error";
 }
 ?>

@@ -8,19 +8,19 @@ section.third(id="charity")
                 li.third__wrapper-grown-list-item
                     span.third__wrapper-grown-list-item-numb 01
                     p.third__wrapper-grown-list-item-text Сбор средств на нужды армии
-                    a(href="#").third__wrapper-grown-list-item-link 
+                    a(href="https://pay.fondy.eu/s/rmku6cmMDPG8h4CA").third__wrapper-grown-list-item-link 
                         button.third__wrapper-grown-list-item-link-btn 
                         button.third__wrapper-grown-list-item-link-btn-tablet Пожертвовать
                 li.third__wrapper-grown-list-item
                     span.third__wrapper-grown-list-item-numb 02
                     p.third__wrapper-grown-list-item-text Сбор средств на медикаменты 
-                    a(href="#").third__wrapper-grown-list-item-link 
+                    a(href="https://pay.fondy.eu/s/rmku6cmMDPG8h4CA").third__wrapper-grown-list-item-link 
                         button.third__wrapper-grown-list-item-link-btn
                         button.third__wrapper-grown-list-item-link-btn-tablet Пожертвовать
-                li.third__wrapper-grown-list-item
+                li.third__wrapper-grown-list-item(id="rep")
                     span.third__wrapper-grown-list-item-numb 03
                     p.third__wrapper-grown-list-item-text Сбор средств на еду в районы гуманитарной катастрофы
-                    a(href="#").third__wrapper-grown-list-item-link 
+                    a(href="https://pay.fondy.eu/s/rmku6cmMDPG8h4CA").third__wrapper-grown-list-item-link 
                         button.third__wrapper-grown-list-item-link-btn
                         button.third__wrapper-grown-list-item-link-btn-tablet Пожертвовать
         .third__wrapper-expens
