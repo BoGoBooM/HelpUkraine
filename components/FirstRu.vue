@@ -15,7 +15,7 @@ section.charity
             ul.charity__wrapper-donations-list
                 li.charity__wrapper-donations-list-item
                     .charity__wrapper-donations-list-item-wrap
-                        span.charity__wrapper-donations-list-item-wrap-title > 250.000₴
+                        span.charity__wrapper-donations-list-item-wrap-title > 250.000 ₴
                         p.charity__wrapper-donations-list-item-wrap-text Было собрано неравнодушными людьми
                 li.charity__wrapper-donations-list-item
                     .charity__wrapper-donations-list-item-wrap

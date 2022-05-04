@@ -15,11 +15,11 @@ section.charity
             ul.charity__wrapper-donations-list
                 li.charity__wrapper-donations-list-item
                     .charity__wrapper-donations-list-item-wrap
-                        span.charity__wrapper-donations-list-item-wrap-title > 250.000₴
+                        span.charity__wrapper-donations-list-item-wrap-title > 250.000 ₴
                         p.charity__wrapper-donations-list-item-wrap-text Було зібрано небайдужими людьми
                 li.charity__wrapper-donations-list-item
                     .charity__wrapper-donations-list-item-wrap
-                        span.charity__wrapper-donations-list-item-wrap-title > 150шт
+                        span.charity__wrapper-donations-list-item-wrap-title > 150 шт
                         p.charity__wrapper-donations-list-item-wrap-text Бронежелетів доставлено до наших <br> захисників
                 li.charity__wrapper-donations-list-item
                     .charity__wrapper-donations-list-item-wrap

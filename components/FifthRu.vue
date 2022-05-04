@@ -9,13 +9,14 @@ section.fifth(id="forms")
                 button(type="button" @click="clickOnButton" ).fifth__wrapper-list-item-btn(:class="{'active' : modal}") Нуждаюсь в помощи
         .fifth__wrapper-wrap(:class="{'active' : modal}" )
             form(action="telegramRuNeed.php" method="POST").fifth__wrapper-wrap-form
-                input(type="text" placeholder="Ваше имя" name="user_name" required).fifth__wrapper-wrap-form-name
+                input(type="text" placeholder="Ваше имя *" name="user_name" required).fifth__wrapper-wrap-form-name
                 .fifth__wrapper-wrap-form-menu
                     a.fifth__wrapper-wrap-form-menu-contry
                         img(src="~/assets/img/Ua.svg" alt="Номер країни").fifth__wrapper-wrap-form-menu-contry-img
                         //- img(src="~/assets/img/arrNumb.svg" alt="").fifth__wrapper-wrap-form-menu-contry-arrow
-                    input(type="tel" placeholder="+380 (99) 999-99-99" name="user_phone" required).fifth__wrapper-wrap-form-menu-phone
-                input(type="text" placeholder="Ваш город" name="user_locate" required).fifth__wrapper-wrap-form-city
+                    input(type="tel" placeholder="+380 (99) 999-99-99 *"  minlength="10" maxlength="20" name="user_phone" required).fifth__wrapper-wrap-form-menu-phone
+                input(type="text" placeholder="Ваше Email" name="user_email").fifth__wrapper-wrap-form-email
+                input(type="text" placeholder="Ваш город *" name="user_locate" required).fifth__wrapper-wrap-form-city
                 input(type="text" placeholder="Чем вам нужно помочь?" name="user_need" ).fifth__wrapper-wrap-form-help
                 .fifth__wrapper-wrap-form-submit 
                     input(type="submit" value="Отправить").fifth__wrapper-wrap-form-submit-btn
@@ -26,13 +27,14 @@ section.fifth(id="forms")
                 img(src="~/assets/img/photo6.png" alt="Допомога постраждалим").fifth__wrapper-wrap-info-img
         .fifth__wrapper-wrap(:class="{'active' : ! modal}" )
             form(action="telegramRuCan.php" method="POST").fifth__wrapper-wrap-form
-                input(type="text" placeholder="Ваше имя" name="user_name" required).fifth__wrapper-wrap-form-name
+                input(type="text" placeholder="Ваше имя *" name="user_name" required).fifth__wrapper-wrap-form-name
                 .fifth__wrapper-wrap-form-menu
                     a.fifth__wrapper-wrap-form-menu-contry
                         img(src="~/assets/img/Ua.svg" alt="Номер країни").fifth__wrapper-wrap-form-menu-contry-img
                         //- img(src="~/assets/img/arrNumb.svg" alt="").fifth__wrapper-wrap-form-menu-contry-arrow
-                    input(type="tel" placeholder="+380 (99) 999-99-99" name="user_phone" required).fifth__wrapper-wrap-form-menu-phone
-                input(type="text" placeholder="Ваш город" name="user_locate" required).fifth__wrapper-wrap-form-city
+                    input(type="tel" placeholder="+380 (99) 999-99-99 *"  minlength="10" maxlength="20" name="user_phone" required).fifth__wrapper-wrap-form-menu-phone
+                input(type="text" placeholder="Ваше Email" name="user_email").fifth__wrapper-wrap-form-email
+                input(type="text" placeholder="Ваш город *" name="user_locate" required).fifth__wrapper-wrap-form-city
                 input(type="text" placeholder="Чем вы можете помочь?" name="user_can").fifth__wrapper-wrap-form-help
                 .fifth__wrapper-wrap-form-submit 
                     input(type="submit" value="Отправить").fifth__wrapper-wrap-form-submit-btn
@@ -182,6 +184,22 @@ export default {
 
                     }
                 }
+                }
+                &-email {
+                    width: 528px;
+                    height: 52px;
+                    border: none;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                    background: none;
+                    margin-top: 30px;
+                    color: #fff;
+                    padding-left: 15px;
+                    font-size: 16px;
+                    &::placeholder { 
+                        color: #fff;
+                        font-size: 16px;
+                        
+                    }
                 }
                 
                 &-city {
@@ -356,6 +374,11 @@ export default {
                         margin: auto;
                         padding-left: 55px;
                     }
+                }
+                &-email {
+                    max-width: 328px;
+                    margin: auto;
+                    margin-bottom: 20px;
                 }
                 
                 &-city {

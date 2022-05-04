@@ -263,6 +263,7 @@ export default {
   &.active {
     transform: translateX(0);
     transition: .7s ease;
+    overflow-y: scroll;
     }
     &-wrapper {
       &-list {
@@ -271,7 +272,7 @@ export default {
           display: flex;
           &-link {
             width: 100%;
-            padding: 16px 0 16px 32px;
+            padding: 12px 0 12px 32px;
           }
           &-nav {
            color: #F9224B;
@@ -356,7 +357,10 @@ export default {
         flex-direction: column;
       }
       &-lang {
-        margin-bottom: 16px;
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+        
         &.hover {
           color: #F9224B;
         }
@@ -380,7 +384,7 @@ export default {
     margin: auto;
     position: absolute;
     width: 80%;
-    top: 600px;
+    top: 530px;
     right: 81px;
     // margin-top: 200px;
     &-link {

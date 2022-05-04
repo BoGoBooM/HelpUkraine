@@ -63,7 +63,7 @@ section.sixth(id="faq")
                     li.sixth__wrapper-soul-contacts-list-item 
                         span.sixth__wrapper-soul-contacts-list-item-numb 01 
                         .sixth__wrapper-soul-contacts-list-item-wrap
-                            p.sixth__wrapper-soul-contacts-list-item-wrap-name Світлана Карацюба
+                            p.sixth__wrapper-soul-contacts-list-item-wrap-name Светлана Карацюба
                             a(href="tel:+380 (50) 168-65-01").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (50) 168-65-01
                         .sixth__wrapper-soul-contacts-list-item-socials
                             a(href="https://instagram.com/sveta.k_s?igshid=YmMyMTA2M2Y=").sixth__wrapper-soul-contacts-list-item-socials-link
@@ -73,7 +73,7 @@ section.sixth(id="faq")
                     li.sixth__wrapper-soul-contacts-list-item 
                         span.sixth__wrapper-soul-contacts-list-item-numb 02
                         .sixth__wrapper-soul-contacts-list-item-wrap
-                            p.sixth__wrapper-soul-contacts-list-item-wrap-name Підковка Таня
+                            p.sixth__wrapper-soul-contacts-list-item-wrap-name Подковка Таня
                             a(href="tel:+380 (63) 446-60-47").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (63) 446-60-47
                         .sixth__wrapper-soul-contacts-list-item-socials
                             a(href="https://instagram.com/tana.podkovka?igshid=YmMyMTA2M2Y= ").sixth__wrapper-soul-contacts-list-item-socials-link
@@ -83,7 +83,7 @@ section.sixth(id="faq")
                     li.sixth__wrapper-soul-contacts-list-item 
                         span.sixth__wrapper-soul-contacts-list-item-numb 03
                         .sixth__wrapper-soul-contacts-list-item-wrap
-                            p.sixth__wrapper-soul-contacts-list-item-wrap-name Вофсі Павло
+                            p.sixth__wrapper-soul-contacts-list-item-wrap-name Вофси Павел
                             a(href="tel:+380 (99) 172-10-26").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (99) 172-10-26
                         .sixth__wrapper-soul-contacts-list-item-socials
                             a(href="https://instagram.com/vofsikpash?igshid=YmMyMTA2M2Y=").sixth__wrapper-soul-contacts-list-item-socials-link
@@ -93,7 +93,7 @@ section.sixth(id="faq")
                     li.sixth__wrapper-soul-contacts-list-item 
                         span.sixth__wrapper-soul-contacts-list-item-numb 04
                         .sixth__wrapper-soul-contacts-list-item-wrap
-                            p.sixth__wrapper-soul-contacts-list-item-wrap-name Шляхта Віка
+                            p.sixth__wrapper-soul-contacts-list-item-wrap-name Шляхта Вика
                             a(href="tel:+380 (63) 601-01-21").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (63) 601-01-21
                         .sixth__wrapper-soul-contacts-list-item-socials
                             a(href=" https://instagram.com/vikashliakhta?igshid=YmMyMTA2M2Y=").sixth__wrapper-soul-contacts-list-item-socials-link

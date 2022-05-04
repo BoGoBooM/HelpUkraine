@@ -5,6 +5,7 @@
 
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
+$email = $_POST['user_email'];
 $locate = $_POST['user_locate'];
 $help = $_POST['user_need'];
 $token = "5322562951:AAENujJOUemepr4GmM_kVysjpiKGG0GQnEg";
@@ -13,6 +14,7 @@ $arr = array(
      $name => ' Потребує нашої допомоги',
     "Ім'я користувача: " => $name,
     'Телефон: ' => $phone,
+    'Email: ' => $email,
     'Місцезнаходження:  ' => $locate,
     'Потребую допомоги: ' => $help
 );
