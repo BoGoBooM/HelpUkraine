@@ -258,6 +258,7 @@ export default {
   &.active {
     transform: translateX(0);
     transition: .7s ease;
+    overflow-y: scroll;
     }
     &-wrapper {
       position: relative;
