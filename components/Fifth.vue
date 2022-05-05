@@ -15,7 +15,7 @@ section.fifth(id="forms")
                         img(src="~/assets/img/Ua.svg" alt="Номер країни").fifth__wrapper-wrap-form-menu-contry-img
                         //- img(src="~/assets/img/arrNumb.svg" alt="").fifth__wrapper-wrap-form-menu-contry-arrow
                     input(type="tel" placeholder="+380 (99) 999-99-99 *"  minlength="10" maxlength="20"  name="user_phone" required).fifth__wrapper-wrap-form-menu-phone
-                input(type="text" placeholder="Ваше Email" name="user_email").fifth__wrapper-wrap-form-email
+                input(type="text" placeholder="Ваш Email" name="user_email").fifth__wrapper-wrap-form-email
                 input(type="text" placeholder="Ваше місто *" name="user_locate" required).fifth__wrapper-wrap-form-city
                 input(type="text" placeholder="Чим вам потрібно допомогти?" name="user_need" ).fifth__wrapper-wrap-form-help
                 .fifth__wrapper-wrap-form-submit 
@@ -33,7 +33,7 @@ section.fifth(id="forms")
                         img(src="~/assets/img/Ua.svg" alt="Номер країни").fifth__wrapper-wrap-form-menu-contry-img
                         //- img(src="~/assets/img/arrNumb.svg" alt="").fifth__wrapper-wrap-form-menu-contry-arrow
                     input(type="tel" placeholder="+380 (99) 999-99-99 *"  minlength="10" maxlength="20" name="user_phone" required).fifth__wrapper-wrap-form-menu-phone
-                input(type="text" placeholder="Ваше Email" name="user_email").fifth__wrapper-wrap-form-email
+                input(type="text" placeholder="Ваш Email" name="user_email").fifth__wrapper-wrap-form-email
                 input(type="text" placeholder="Ваше місто *" name="user_locate" required).fifth__wrapper-wrap-form-city
                 input(type="text" placeholder="Чим ви можете допомогти?" name="user_can").fifth__wrapper-wrap-form-help
                 .fifth__wrapper-wrap-form-submit 

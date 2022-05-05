@@ -6,11 +6,11 @@ section.team(id="about")
             img(src="~/assets/img/photo1.png" alt="Гуманітарна допомога").team__wrapper-page-img
             .team__wrapper-page-info
                 .team__wrapper-page-info-wrap
-                    p.team__wrapper-page-info-wrap-text.left Нашей целью стала помощь армии, территориальной обороне, обычным людям и детям. Мы стараемся обеспечить этих людей необходимыми вещами: амуницией, едой, средствами личной гигиены, лекарствами и прочим. Команда проводит собрание своими силами, закупаем необходимые вещи и доставляем их лично в руки.
+                    p.team__wrapper-page-info-wrap-text.left Нашей целью стала помощь армии, территориальной обороне, обычным людям и детям. Мы стараемся обеспечить этих людей необходимыми вещами: амуницией, едой, средствами личной гигиены, лекарствами и прочим. Команда проводит сбор денегсвоими силами, закупает необходимые вещи и доставляет их лично в руки.
                     p.team__wrapper-page-info-wrap-text.bottom Каждый из вас может внести этот вклад и спасти жизнь. Всего в один клик вы можете помочь финансово, и прислать бронежилет военному, который не спит ночами и защищает украинский народ от захватчиков.
                 .team__wrapper-page-info-paragraph
                     .team__wrapper-page-info-paragraph-mark
-                    p.team__wrapper-page-info-paragraph-text Стоит отметить, что нам как студентам тяжело обеспечить все финансовые расходы. <br> Поэтому для нас важна ваша поддержка. Все отчеты о расходах можно получить в <a href="#" class="team__wrapper-page-info-paragraph-text-link" >Telegram</a> и <a href="#" class="team__wrapper-page-info-paragraph-text-link">Instagram</a>
+                    p.team__wrapper-page-info-paragraph-text Стоит отметить, что нам как студентам тяжело обеспечить все финансовые расходы. <br> Поэтому для нас важна ваша поддержка. Все отчеты о расходах можно получить в <a href="https://t.me/pomozchazov" class="team__wrapper-page-info-paragraph-text-link" >Telegram</a> и <a href="https://instagram.com/sveta.k_s?igshid=YmMyMTA2M2Y=" class="team__wrapper-page-info-paragraph-text-link">Instagram</a>
         .team__wrapper-photos
             img(src="~/assets/img/photo2.png" alt="Гуманітарна допомога").team__wrapper-photos-img
             img(src="~/assets/img/photo3.png" alt="Гуманітарна допомога").team__wrapper-photos-img

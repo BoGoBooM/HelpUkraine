@@ -14,12 +14,12 @@ section.sixth(id="faq")
                 li.sixth__wrapper-faq-list-item(:class="{'active' : modal2}")
                     .sixth__wrapper-faq-list-item-wrap
                         h4.sixth__wrapper-faq-list-item-wrap-question Як я можу допомогти?
-                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal2}") •Финансово – пожертвовать средства <br><br> •Материально – продукты питания, вещи, медикаменты, горючее, транспорт. Для этого нужно заполнить короткую <a class="sixth__wrapper-faq-list-item-wrap-text-link" href="#forms">форму</a> и предоставить контакт для связи и сотрудничества с вами. <br><br>•Физически - присоединиться к нашей команде<br><br>•Словесно - поддерживать нас распространением информации репостом на своей странице или ссылкой на сайт
+                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal2}") •Финансово – пожертвовать средства. <br><br> •Материально – продукты питания, вещи, медикаменты, горючее, транспорт. Для этого нужно заполнить короткую. <a class="sixth__wrapper-faq-list-item-wrap-text-link" href="#forms">форму</a> и предоставить контакт для связи и сотрудничества с вами. <br><br>•Физически - присоединиться к нашей команде.<br><br>•Словесно - поддерживать нас распространением информации репостом на своей странице или ссылкой на сайт.
                     .sixth__wrapper-faq-list-item-btn(type="button" @click="clickOnButton2" :class="{'active' : modal2}")
                 li.sixth__wrapper-faq-list-item(:class="{'active' : modal3}")
                     .sixth__wrapper-faq-list-item-wrap
                         h4.sixth__wrapper-faq-list-item-wrap-question Почему мы ничего не зарабатываем на этом?
-                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal3}")  Мы – волонтеры. Нам не позволяет совесть класть что-то в свою карман, пока люди страдают гуманитарной катастрофой и агрессией со стороны РФ. Даже то, что мы уже сделали и делаем сейчас, мы считаем малым вкладом. Поэтому делаем все, чтобы помочь каждому! И были бы рады приветствовать в своей команде единомышленников)
+                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal3}")  Мы – волонтеры. Нам не позволяет совесть класть что-то в свою карман, пока люди страдают от гуманитарной катастрофы и агрессии со стороны РФ. Даже то, что мы уже сделали и делаем сейчас, мы считаем малым вкладом. Поэтому делаем все, чтобы помочь каждому! И были бы рады приветствовать в своей команде единомышленников)
                     .sixth__wrapper-faq-list-item-btn(type="button" @click="clickOnButton3" :class="{'active' : modal3}")
                 li.sixth__wrapper-faq-list-item(:class="{'active' : modal4}")
                     .sixth__wrapper-faq-list-item-wrap
@@ -36,23 +36,23 @@ section.sixth(id="faq")
                 ul.sixth__wrapper-soul-slider-list
                     li.sixth__wrapper-soul-slider-list-item
                         img(src="~/assets/img/slider1.png", alt="Волонтер").sixth__wrapper-soul-slider-list-item-img
-                        p.sixth__wrapper-soul-slider-list-item-name Світлана Карацюба
+                        p.sixth__wrapper-soul-slider-list-item-name Светлана Карацюба
                         p.sixth__wrapper-soul-slider-list-item-text Сбор средств, помогает в Киеве
                     li.sixth__wrapper-soul-slider-list-item
                         img(src="~/assets/img/slider2.png", alt="Волонтер").sixth__wrapper-soul-slider-list-item-img
-                        p.sixth__wrapper-soul-slider-list-item-name Підковка Таня
+                        p.sixth__wrapper-soul-slider-list-item-name Подковка Таня
                         p.sixth__wrapper-soul-slider-list-item-text Распространение информации
                     li.sixth__wrapper-soul-slider-list-item
                         img(src="~/assets/img/slider3.png", alt="Волонтер").sixth__wrapper-soul-slider-list-item-img
-                        p.sixth__wrapper-soul-slider-list-item-name Вофсі Павло
+                        p.sixth__wrapper-soul-slider-list-item-name Вофси Павел
                         p.sixth__wrapper-soul-slider-list-item-text Передача гуманитарной помощи, помогает в Киеве
                     li.sixth__wrapper-soul-slider-list-item
                         img(src="~/assets/img/slider4.png", alt="Волонтер").sixth__wrapper-soul-slider-list-item-img
-                        p.sixth__wrapper-soul-slider-list-item-name Ніно Басілая
+                        p.sixth__wrapper-soul-slider-list-item-name Шляхта Вика
                         p.sixth__wrapper-soul-slider-list-item-text Распространение информации
                     li.sixth__wrapper-soul-slider-list-item
                         img(src="~/assets/img/slider5.png", alt="Волонтер").sixth__wrapper-soul-slider-list-item-img
-                        p.sixth__wrapper-soul-slider-list-item-name Шляхта Віка
+                        p.sixth__wrapper-soul-slider-list-item-name Шляхта Вика
                         p.sixth__wrapper-soul-slider-list-item-text Распространение информации
                     li.sixth__wrapper-soul-slider-list-item
                         img(src="~/assets/img/slider6.png", alt="Волонтер").sixth__wrapper-soul-slider-list-item-img
@@ -64,7 +64,7 @@ section.sixth(id="faq")
                         span.sixth__wrapper-soul-contacts-list-item-numb 01 
                         .sixth__wrapper-soul-contacts-list-item-wrap
                             p.sixth__wrapper-soul-contacts-list-item-wrap-name Светлана Карацюба
-                            a(href="tel:+380 (50) 168-65-01").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (50) 168-65-01
+                            a(href="mailto:Karazubasveta@gmail.com").sixth__wrapper-soul-contacts-list-item-wrap-phone Karazubasveta@gmail.com
                         .sixth__wrapper-soul-contacts-list-item-socials
                             a(href="https://instagram.com/sveta.k_s?igshid=YmMyMTA2M2Y=").sixth__wrapper-soul-contacts-list-item-socials-link
                                 img(src="~/assets/img/inst.svg", alt="Інстаграм").sixth__wrapper-soul-contacts-list-item-socials-link-img
@@ -74,7 +74,7 @@ section.sixth(id="faq")
                         span.sixth__wrapper-soul-contacts-list-item-numb 02
                         .sixth__wrapper-soul-contacts-list-item-wrap
                             p.sixth__wrapper-soul-contacts-list-item-wrap-name Подковка Таня
-                            a(href="tel:+380 (63) 446-60-47").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (63) 446-60-47
+                            a(href="mailto:Podkovkatana@gmail.com").sixth__wrapper-soul-contacts-list-item-wrap-phone Podkovkatana@gmail.com
                         .sixth__wrapper-soul-contacts-list-item-socials
                             a(href="https://instagram.com/tana.podkovka?igshid=YmMyMTA2M2Y= ").sixth__wrapper-soul-contacts-list-item-socials-link
                                 img(src="~/assets/img/inst.svg", alt="Інстаграм").sixth__wrapper-soul-contacts-list-item-socials-link-img
@@ -84,7 +84,7 @@ section.sixth(id="faq")
                         span.sixth__wrapper-soul-contacts-list-item-numb 03
                         .sixth__wrapper-soul-contacts-list-item-wrap
                             p.sixth__wrapper-soul-contacts-list-item-wrap-name Вофси Павел
-                            a(href="tel:+380 (99) 172-10-26").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (99) 172-10-26
+                            a(href="mailto:pashavozianidze@gmail.com").sixth__wrapper-soul-contacts-list-item-wrap-phone pashavozianidze@gmail.com
                         .sixth__wrapper-soul-contacts-list-item-socials
                             a(href="https://instagram.com/vofsikpash?igshid=YmMyMTA2M2Y=").sixth__wrapper-soul-contacts-list-item-socials-link
                                 img(src="~/assets/img/inst.svg", alt="Інстаграм").sixth__wrapper-soul-contacts-list-item-socials-link-img
@@ -94,7 +94,7 @@ section.sixth(id="faq")
                         span.sixth__wrapper-soul-contacts-list-item-numb 04
                         .sixth__wrapper-soul-contacts-list-item-wrap
                             p.sixth__wrapper-soul-contacts-list-item-wrap-name Шляхта Вика
-                            a(href="tel:+380 (63) 601-01-21").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (63) 601-01-21
+                            a(href="mailto:vikashliakhta865@gmail.com").sixth__wrapper-soul-contacts-list-item-wrap-phone vikashliakhta865@gmail.com
                         .sixth__wrapper-soul-contacts-list-item-socials
                             a(href=" https://instagram.com/vikashliakhta?igshid=YmMyMTA2M2Y=").sixth__wrapper-soul-contacts-list-item-socials-link
                                 img(src="~/assets/img/inst.svg", alt="Інстаграм").sixth__wrapper-soul-contacts-list-item-socials-link-img-solo
@@ -104,7 +104,7 @@ section.sixth(id="faq")
                         span.sixth__wrapper-soul-contacts-list-item-numb 05
                         .sixth__wrapper-soul-contacts-list-item-wrap
                             p.sixth__wrapper-soul-contacts-list-item-wrap-name Богдан
-                            a(href="tel:+380 (93) 466-19-65").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (93) 466-19-65
+                            a(href="dan4ik.crash@gmail.com").sixth__wrapper-soul-contacts-list-item-wrap-phone dan4ik.crash@gmail.com
                         .sixth__wrapper-soul-contacts-list-item-socials
                             a(href="https://t.me/Darkness_Flame").sixth__wrapper-soul-contacts-list-item-socials-link
                                 img(src="~/assets/img/tg.svg", alt="Телеграм").sixth__wrapper-soul-contacts-list-item-socials-link-img-solo
@@ -355,7 +355,7 @@ export default {
                                 width: 210px;
                                 text-decoration: none;
                                 color: #000;
-                                margin-right: 140px;
+                                margin-right: 135px;
                                 &:hover {
                                     color: #F9224B;
                                 }

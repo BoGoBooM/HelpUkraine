@@ -20,7 +20,7 @@ section.charity
                 li.charity__wrapper-donations-list-item
                     .charity__wrapper-donations-list-item-wrap
                         span.charity__wrapper-donations-list-item-wrap-title > 150 шт
-                        p.charity__wrapper-donations-list-item-wrap-text Бронежелетов доставлено к нашим защитникам
+                        p.charity__wrapper-donations-list-item-wrap-text Бронежилетов доставлено к нашим защитникам
                 li.charity__wrapper-donations-list-item
                     .charity__wrapper-donations-list-item-wrap
                         span.charity__wrapper-donations-list-item-wrap-title 3597 человек

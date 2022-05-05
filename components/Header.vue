@@ -33,7 +33,7 @@ header.header
       .header__sideBar-wrapper 
         ul.header__sideBar-wrapper-list
           li.header__sideBar-wrapper-list-item
-            p.header__sideBar-wrapper-list-item-nav Навигація
+            p.header__sideBar-wrapper-list-item-nav Навігація
             .header__sideBar-wrapper-list-item-btn(type="button" @click="clickOnButton") 
           li.header__sideBar-wrapper-list-item
             a(href="#about").header__sideBar-wrapper-list-item-link( type="button" @click="clickOnButton")  

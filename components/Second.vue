@@ -10,7 +10,7 @@ section.team(id="about")
                     p.team__wrapper-page-info-wrap-text.bottom Кожен із вас може зробити цей внесок та врятувати чиєсь життя. Всього за один клік ви можете допомогти фінансово, та надіслати бронежилет війсковому, який не спить ночами та захищає український народ від загарбників.
                 .team__wrapper-page-info-paragraph
                     .team__wrapper-page-info-paragraph-mark
-                    p.team__wrapper-page-info-paragraph-text  Варто зазначити, що нам, як студентам, тяжко забезпечити всі фінансові витрати. <br> Тому для нас важлива ваша підтримка. Всі звіти про витрати можна отримати в <a href="#" class="team__wrapper-page-info-paragraph-text-link" >Telegram</a> та <a href="#" class="team__wrapper-page-info-paragraph-text-link">Instagram</a> 
+                    p.team__wrapper-page-info-paragraph-text  Варто зазначити, що нам, як студентам, тяжко забезпечити всі фінансові витрати. <br> Тому для нас важлива ваша підтримка. Всі звіти про витрати можна отримати в <a href="https://t.me/pomozchazov" class="team__wrapper-page-info-paragraph-text-link" >Telegram</a> та <a href="https://instagram.com/sveta.k_s?igshid=YmMyMTA2M2Y=" class="team__wrapper-page-info-paragraph-text-link">Instagram</a> 
         .team__wrapper-photos
             img(src="~/assets/img/photo2.png" alt="Гуманітарна допомога").team__wrapper-photos-img
             img(src="~/assets/img/photo3.png" alt="Гуманітарна допомога").team__wrapper-photos-img

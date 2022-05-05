@@ -64,7 +64,7 @@ section.sixth(id="faq")
                         span.sixth__wrapper-soul-contacts-list-item-numb 01 
                         .sixth__wrapper-soul-contacts-list-item-wrap
                             p.sixth__wrapper-soul-contacts-list-item-wrap-name Світлана Карацюба
-                            a(href="tel:+380 (50) 168-65-01").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (50) 168-65-01
+                            a(href="mailto:Karazubasveta@gmail.com").sixth__wrapper-soul-contacts-list-item-wrap-phone Karazubasveta@gmail.com
                         .sixth__wrapper-soul-contacts-list-item-socials
                             a(href="https://instagram.com/sveta.k_s?igshid=YmMyMTA2M2Y=").sixth__wrapper-soul-contacts-list-item-socials-link
                                 img(src="~/assets/img/inst.svg", alt="Інстаграм").sixth__wrapper-soul-contacts-list-item-socials-link-img
@@ -74,7 +74,7 @@ section.sixth(id="faq")
                         span.sixth__wrapper-soul-contacts-list-item-numb 02
                         .sixth__wrapper-soul-contacts-list-item-wrap
                             p.sixth__wrapper-soul-contacts-list-item-wrap-name Підковка Таня
-                            a(href="tel:+380 (63) 446-60-47").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (63) 446-60-47
+                            a(href="mailto:Podkovkatana@gmail.com").sixth__wrapper-soul-contacts-list-item-wrap-phone Podkovkatana@gmail.com
                         .sixth__wrapper-soul-contacts-list-item-socials
                             a(href="https://instagram.com/tana.podkovka?igshid=YmMyMTA2M2Y= ").sixth__wrapper-soul-contacts-list-item-socials-link
                                 img(src="~/assets/img/inst.svg", alt="Інстаграм").sixth__wrapper-soul-contacts-list-item-socials-link-img
@@ -84,7 +84,7 @@ section.sixth(id="faq")
                         span.sixth__wrapper-soul-contacts-list-item-numb 03
                         .sixth__wrapper-soul-contacts-list-item-wrap
                             p.sixth__wrapper-soul-contacts-list-item-wrap-name Вофсі Павло
-                            a(href="tel:+380 (99) 172-10-26").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (99) 172-10-26
+                            a(href="mailto:pashavozianidze@gmail.com").sixth__wrapper-soul-contacts-list-item-wrap-phone pashavozianidze@gmail.com
                         .sixth__wrapper-soul-contacts-list-item-socials
                             a(href="https://instagram.com/vofsikpash?igshid=YmMyMTA2M2Y=").sixth__wrapper-soul-contacts-list-item-socials-link
                                 img(src="~/assets/img/inst.svg", alt="Інстаграм").sixth__wrapper-soul-contacts-list-item-socials-link-img
@@ -94,7 +94,7 @@ section.sixth(id="faq")
                         span.sixth__wrapper-soul-contacts-list-item-numb 04
                         .sixth__wrapper-soul-contacts-list-item-wrap
                             p.sixth__wrapper-soul-contacts-list-item-wrap-name Шляхта Віка
-                            a(href="tel:+380 (63) 601-01-21").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (63) 601-01-21
+                            a(href="mailto:vikashliakhta865@gmail.com").sixth__wrapper-soul-contacts-list-item-wrap-phone vikashliakhta865@gmail.com
                         .sixth__wrapper-soul-contacts-list-item-socials
                             a(href=" https://instagram.com/vikashliakhta?igshid=YmMyMTA2M2Y=").sixth__wrapper-soul-contacts-list-item-socials-link
                                 img(src="~/assets/img/inst.svg", alt="Інстаграм").sixth__wrapper-soul-contacts-list-item-socials-link-img-solo
@@ -104,7 +104,7 @@ section.sixth(id="faq")
                         span.sixth__wrapper-soul-contacts-list-item-numb 05
                         .sixth__wrapper-soul-contacts-list-item-wrap
                             p.sixth__wrapper-soul-contacts-list-item-wrap-name Богдан
-                            a(href="tel:+380 (93) 466-19-65").sixth__wrapper-soul-contacts-list-item-wrap-phone +380 (93) 466-19-65
+                            a(href="dan4ik.crash@gmail.com").sixth__wrapper-soul-contacts-list-item-wrap-phone dan4ik.crash@gmail.com
                         .sixth__wrapper-soul-contacts-list-item-socials
                             a(href="https://t.me/Darkness_Flame").sixth__wrapper-soul-contacts-list-item-socials-link
                                 img(src="~/assets/img/tg.svg", alt="Телеграм").sixth__wrapper-soul-contacts-list-item-socials-link-img-solo
@@ -348,7 +348,7 @@ export default {
                                 width: 210px;
                                 text-decoration: none;
                                 color: #000;
-                                margin-right: 140px;
+                                margin-right: 135px;
                                 &:hover {
                                     color: #F9224B;
                                 }

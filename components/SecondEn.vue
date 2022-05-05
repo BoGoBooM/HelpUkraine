@@ -10,7 +10,7 @@ section.team(id="about")
                     p.team__wrapper-page-info-wrap-text.bottom Each of you can contribute and save someone's life.  In just one click, you can help financially and send a bulletproof vest to a soldier who does not sleep at night and protects the Ukrainian people from invaders.
                 .team__wrapper-page-info-paragraph
                     .team__wrapper-page-info-paragraph-mark
-                    p.team__wrapper-page-info-paragraph-text It is worth to note, it is difficult for us, as a students, to provide all the financial costs.  That is why your support is important to us.  All expense reports you can see on <a href="#" class="team__wrapper-page-info-paragraph-text-link" >Telegram</a> and <a href="#" class="team__wrapper-page-info-paragraph-text-link">Instagram</a> 
+                    p.team__wrapper-page-info-paragraph-text It is worth to note, it is difficult for us, as a students, to provide all the financial costs.  That is why your support is important to us.  All expense reports you can see on <a href="https://t.me/pomozchazov" class="team__wrapper-page-info-paragraph-text-link" >Telegram</a> and <a href="https://instagram.com/sveta.k_s?igshid=YmMyMTA2M2Y=" class="team__wrapper-page-info-paragraph-text-link">Instagram</a> 
         .team__wrapper-photos
             img(src="~/assets/img/photo2.png" alt="Гуманітарна допомога").team__wrapper-photos-img
             img(src="~/assets/img/photo3.png" alt="Гуманітарна допомога").team__wrapper-photos-img
