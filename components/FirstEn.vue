@@ -24,7 +24,7 @@ section.charity
                 li.charity__wrapper-donations-list-item
                     .charity__wrapper-donations-list-item-wrap
                         span.charity__wrapper-donations-list-item-wrap-title 3597 people
-                        p.charity__wrapper-donations-list-item-wrap-text joined our activities and contributed to the victory of Ukraine
+                        p.charity__wrapper-donations-list-item-wrap-text Joined our activities and contributed to the victory of Ukraine
                 li.charity__wrapper-donations-list-item.time
                     .charity__wrapper-donations-list-item-timer 
                         .charity__wrapper-donations-list-item-timer-time 24.02.2022 04:00

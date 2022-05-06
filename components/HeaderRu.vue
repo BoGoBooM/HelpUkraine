@@ -7,7 +7,7 @@ header.header
         li.header__bar-list-item
           a(href="#about").header__bar-list-item-link О нас
         li.header__bar-list-item
-          a(href="#charity").header__bar-list-item-link Благотворитльность
+          a(href="#charity").header__bar-list-item-link Благотворительность
         li.header__bar-list-item
           a(href="#forms").header__bar-list-item-link Другая помощь
         li.header__bar-list-item

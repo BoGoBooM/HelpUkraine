@@ -14,7 +14,7 @@ section.sixth(id="faq")
                 li.sixth__wrapper-faq-list-item(:class="{'active' : modal2}")
                     .sixth__wrapper-faq-list-item-wrap
                         h4.sixth__wrapper-faq-list-item-wrap-question Як я можу допомогти?
-                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal2}") •Фінансово - пожертвувати кошти <br><br> •Матеріально - продукти харчування, речі, медикаменти, пальне, транспорт. Для цього потрібно  заповнити коротку форму (*скрол )та надати контакт для зв‘язку і співпраці з вами. <br><br>•Фізично - долучитися до нашої команди<br><br>•Словесно - підтримувати нас розповсюдженням інформації репостом на своїй сторінці або за допомогою посилання на сайт
+                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal2}") •Фінансово - пожертвувати кошти. <br><br> •Матеріально - продукти харчування, речі, медикаменти, пальне, транспорт. Для цього потрібно  заповнити коротку. <a class="sixth__wrapper-faq-list-item-wrap-text-link" href="#forms">форму</a> та надати контакт для зв‘язку і співпраці з вами. <br><br>•Фізично - долучитися до нашої команди.<br><br>•Словесно - підтримувати нас розповсюдженням інформації репостом на своїй сторінці або за допомогою посилання на сайт.
                     .sixth__wrapper-faq-list-item-btn(type="button" @click="clickOnButton2" :class="{'active' : modal2}")
                 li.sixth__wrapper-faq-list-item(:class="{'active' : modal3}")
                     .sixth__wrapper-faq-list-item-wrap
@@ -24,7 +24,7 @@ section.sixth(id="faq")
                 li.sixth__wrapper-faq-list-item(:class="{'active' : modal4}")
                     .sixth__wrapper-faq-list-item-wrap
                         h4.sixth__wrapper-faq-list-item-wrap-question Чи будете ви продовжувати свою діяльність після війни?
-                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal4}") Якщо буде потреба в зборі коштів для відбудування нашої країни та рідних домівок, що залишилися розбитими від російських ракет ми обов‘язково допоможемо. Наразі не можемо дати стовідсоткової відповіді на це питання але обов‘язково зробимо все можливе!
+                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal4}") Якщо буде потреба в зборі коштів для відбудування нашої країни та рідних домівок, що залишилися розбитими від російських ракет, ми обов‘язково допоможемо. Наразі не можемо дати стовідсоткової відповіді на це питання, але обов‘язково зробимо все можливе!
                     .sixth__wrapper-faq-list-item-btn(type="button" @click="clickOnButton4" :class="{'active' : modal4}")
         .sixth__wrapper-soul(id="contacts")
             .sixth__wrapper-soul-head 

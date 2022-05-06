@@ -22,8 +22,8 @@ section.fifth(id="forms")
                     input(type="submit" value="Отправить").fifth__wrapper-wrap-form-submit-btn
                     p.fifth__wrapper-wrap-form-submit-confid Нажимая кнопку «отправить» я согласен на обработку персональных данных
             .fifth__wrapper-wrap-info
-                p.fifth__wrapper-wrap-info-text Если вы оказались в затруднительном положении, обратитесь к нам, опишите вашу проблему и мы сделаем все возможное, чтобы помочь вам!
-                p.fifth__wrapper-wrap-info-text Вы обязательно будете услышаны, ведь только, помогая друг другу, мы победим врага!
+                p.fifth__wrapper-wrap-info-text Если вы оказались в затруднительном положении, обратитесь к нам, опишите вашу проблему, и мы сделаем все возможное, чтобы помочь вам!
+                p.fifth__wrapper-wrap-info-text Вы обязательно будете услышаны, ведь только помогая друг другу, мы победим врага!
                 img(src="~/assets/img/photo6.png" alt="Допомога постраждалим").fifth__wrapper-wrap-info-img
         .fifth__wrapper-wrap(:class="{'active' : ! modal}" )
             form(action="telegramRuCan.php" method="POST").fifth__wrapper-wrap-form

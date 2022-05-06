@@ -13,8 +13,8 @@ section.sixth(id="faq")
                     .sixth__wrapper-faq-list-item-btn(type="button" @click="clickOnButton1" :class="{'active' : modal1}")
                 li.sixth__wrapper-faq-list-item(:class="{'active' : modal2}")
                     .sixth__wrapper-faq-list-item-wrap
-                        h4.sixth__wrapper-faq-list-item-wrap-question Як я можу допомогти?
-                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal2}") •Финансово – пожертвовать средства. <br><br> •Материально – продукты питания, вещи, медикаменты, горючее, транспорт. Для этого нужно заполнить короткую. <a class="sixth__wrapper-faq-list-item-wrap-text-link" href="#forms">форму</a> и предоставить контакт для связи и сотрудничества с вами. <br><br>•Физически - присоединиться к нашей команде.<br><br>•Словесно - поддерживать нас распространением информации репостом на своей странице или ссылкой на сайт.
+                        h4.sixth__wrapper-faq-list-item-wrap-question Как я могу помочь?
+                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal2}") •Финансово – пожертвовать средства. <br><br> •Материально – продукты питания, вещи, медикаменты, горючее, транспорт. Для этого нужно заполнить короткую <a class="sixth__wrapper-faq-list-item-wrap-text-link" href="#forms">форму</a> и предоставить контакт для связи и сотрудничества с вами. <br><br>•Физически - присоединиться к нашей команде.<br><br>•Словесно - поддерживать нас распространением информации репостом на своей странице или ссылкой на сайт.
                     .sixth__wrapper-faq-list-item-btn(type="button" @click="clickOnButton2" :class="{'active' : modal2}")
                 li.sixth__wrapper-faq-list-item(:class="{'active' : modal3}")
                     .sixth__wrapper-faq-list-item-wrap
@@ -24,7 +24,7 @@ section.sixth(id="faq")
                 li.sixth__wrapper-faq-list-item(:class="{'active' : modal4}")
                     .sixth__wrapper-faq-list-item-wrap
                         h4.sixth__wrapper-faq-list-item-wrap-question Будете ли вы продолжать свою деятельность после войны?
-                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal4}") Если потребуется сбор средств для восстановления нашей страны и родных домов, оставшихся разбитыми от российских ракет мы обязательно поможем. Пока не можем дать стопроцентный ответ на этот вопрос, но обязательно сделаем все возможное!
+                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal4}") Если потребуется сбор средств для восстановления нашей страны и родных домов, разрушеных из-за попадания российских ракет российских ракет, мы обязательно поможем. Пока не можем дать стопроцентный ответ на этот вопрос, но обязательно сделаем все возможное!
                     .sixth__wrapper-faq-list-item-btn(type="button" @click="clickOnButton4" :class="{'active' : modal4}")
         .sixth__wrapper-soul(id="contacts")
             .sixth__wrapper-soul-head 
@@ -48,7 +48,7 @@ section.sixth(id="faq")
                         p.sixth__wrapper-soul-slider-list-item-text Передача гуманитарной помощи, помогает в Киеве
                     li.sixth__wrapper-soul-slider-list-item
                         img(src="~/assets/img/slider4.png", alt="Волонтер").sixth__wrapper-soul-slider-list-item-img
-                        p.sixth__wrapper-soul-slider-list-item-name Шляхта Вика
+                        p.sixth__wrapper-soul-slider-list-item-name Нино Басилая
                         p.sixth__wrapper-soul-slider-list-item-text Распространение информации
                     li.sixth__wrapper-soul-slider-list-item
                         img(src="~/assets/img/slider5.png", alt="Волонтер").sixth__wrapper-soul-slider-list-item-img

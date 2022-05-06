@@ -14,7 +14,7 @@ section.sixth(id="faq")
                 li.sixth__wrapper-faq-list-item(:class="{'active' : modal2}")
                     .sixth__wrapper-faq-list-item-wrap
                         h4.sixth__wrapper-faq-list-item-wrap-question How can I help?
-                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal2}") • Financially - donate money <br><br>• Materially - food, things, medicines, fuel, transport.To do this, you need to fill out a short form (* скрол) and provide a contact to communicate and cooperate with you. <br><br>• Physically - join our team.<br><br>• Verbally - support us by distributing information, reposting, or sharing the link of website
+                        p.sixth__wrapper-faq-list-item-wrap-text(:class="{'active' : modal2}") • Financially - donate money. <br><br>• Materially - food, things, medicines, fuel, transport. To do this, you need to fill out a short <a class="sixth__wrapper-faq-list-item-wrap-text-link" href="#forms">form</a> and provide a contact to communicate and cooperate with you. <br><br>• Physically - join our team.<br><br>• Verbally - support us by distributing information, reposting, or sharing the link of website.
                     .sixth__wrapper-faq-list-item-btn(type="button" @click="clickOnButton2" :class="{'active' : modal2}")
                 li.sixth__wrapper-faq-list-item(:class="{'active' : modal3}")
                     .sixth__wrapper-faq-list-item-wrap
